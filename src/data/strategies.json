@@ -1,0 +1,465 @@
+{
+  "roleStrategies": [
+    {
+      "roleId": "goose",
+      "beginnerTips": [
+        { "title": "专注任务", "content": "作为基础鹅没有特殊能力，专注完成任务是你最大的贡献。熟悉地图上的任务位置，高效完成。", "level": "beginner" },
+        { "title": "观察记录", "content": "记住其他玩家的位置和行为，在会议中提供有价值的信息。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "结伴行动", "content": "与其他玩家结伴可以互相作证，同时降低被击杀的风险。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "canadian-goose",
+      "beginnerTips": [
+        { "title": "诱饵战术", "content": "你的死亡会迫使凶手自动报告尸体，可以故意在可疑玩家附近活动。", "level": "beginner" },
+        { "title": "不怕落单", "content": "相比其他鹅，你落单的风险更低，因为杀你的人会被迫暴露。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "钓鱼执法", "content": "故意在偏僻区域活动引诱鸭子下手，利用自动报告机制锁定凶手。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "sheriff",
+      "beginnerTips": [
+        { "title": "谨慎开枪", "content": "在没有充分证据之前不要轻易开枪，误杀队友会导致自己也死亡。优先通过会议信息确认目标身份。", "level": "beginner" },
+        { "title": "保护关键角色", "content": "如果知道队伍中有侦探等重要角色，尽量跟随保护他们，同时观察周围可疑行为。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "引蛇出洞", "content": "故意落单引诱鸭子来击杀你，在鸭子靠近时反杀。需要良好的判断力和反应速度。", "level": "advanced" },
+        { "title": "信息博弈", "content": "不要过早暴露自己是警长，在关键时刻再亮明身份并击杀确认的鸭子。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "vigilante",
+      "beginnerTips": [
+        { "title": "珍惜机会", "content": "每局只有一次无惩罚击杀机会，务必在有充分证据时使用。", "level": "beginner" },
+        { "title": "收集证据", "content": "在使用能力前多观察多收集信息，确保目标是鸭子。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "关键时刻出手", "content": "在投票无法达成一致时，用击杀能力直接解决确认的鸭子。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "technician",
+      "beginnerTips": [
+        { "title": "监控破坏", "content": "时刻关注小地图上的破坏提示，第一时间前往修复。", "level": "beginner" },
+        { "title": "报告位置", "content": "在会议中报告破坏发生时附近的玩家，帮助缩小嫌疑范围。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "破坏预判", "content": "根据破坏位置推断鸭子的活动区域和可能的下一步行动。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "medium",
+      "beginnerTips": [
+        { "title": "关注鬼魂", "content": "注意观察鬼魂的位置，推断死亡地点和可能的凶手。", "level": "beginner" },
+        { "title": "传达线索", "content": "将鬼魂位置信息在会议中分享，帮助团队判断。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "交叉验证", "content": "结合鬼魂位置和其他玩家的证词进行交叉验证，提高信息可信度。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "birdwatcher",
+      "beginnerTips": [
+        { "title": "监视要道", "content": "在关键通道或房间附近使用透视能力，监控玩家动向。", "level": "beginner" },
+        { "title": "隐蔽观察", "content": "不需要进入房间就能观察，减少自己被击杀的风险。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "锁定嫌疑人", "content": "通过墙壁观察到击杀行为，在会议中提供直接证据。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "mortician",
+      "beginnerTips": [
+        { "title": "检查尸体", "content": "发现尸体时先检查角色信息再报告，获取关键情报。", "level": "beginner" },
+        { "title": "注意安全", "content": "检查尸体时确保周围安全，避免被鸭子趁机击杀。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "信息分析", "content": "根据死者角色推断鸭子的击杀策略和下一个可能的目标。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "mimic",
+      "beginnerTips": [
+        { "title": "伪装鸭子", "content": "你在鸭子眼中看起来是鸭子，可以利用这点获取信息。", "level": "beginner" },
+        { "title": "小心队友", "content": "鹅阵营不知道你的特殊身份，要避免被队友误杀。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "双面间谍", "content": "利用鸭子对你的信任获取关键信息，在会议中揭露鸭子身份。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "detective",
+      "beginnerTips": [
+        { "title": "有计划调查", "content": "优先调查行为最可疑的玩家，不要随机调查浪费机会。", "level": "beginner" },
+        { "title": "分享结果", "content": "调查结果要在会议中及时分享，帮助团队做出正确投票。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "隐藏调查", "content": "不要每次都立即公布调查结果，有时隐藏信息可以引诱鸭子暴露更多破绽。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "bodyguard",
+      "beginnerTips": [
+        { "title": "保护要人", "content": "优先保护警长、侦探等关键角色，你的牺牲换取他们存活。", "level": "beginner" },
+        { "title": "紧跟目标", "content": "始终跟在保护目标身边，确保能及时挡下攻击。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "威慑效果", "content": "让鸭子知道你在保护某人，可以起到威慑作用，迫使鸭子转移目标。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "adventurer",
+      "beginnerTips": [
+        { "title": "利用免疫", "content": "大胆前往危险区域完成任务，你不会受到环境伤害。", "level": "beginner" },
+        { "title": "独特路线", "content": "走其他玩家不敢走的路线，高效完成任务。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "验证身份", "content": "在危险区域存活可以间接证明你的身份，增加可信度。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "locksmith",
+      "beginnerTips": [
+        { "title": "解锁救援", "content": "当鸭子锁门困住玩家时，及时开锁救援。", "level": "beginner" },
+        { "title": "保持移动", "content": "利用开锁能力保持团队的移动自由。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "反破坏", "content": "预判鸭子的锁门策略，提前部署在关键位置。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "politician",
+      "beginnerTips": [
+        { "title": "大胆发言", "content": "平票不会被淘汰，所以可以大胆指控可疑玩家。", "level": "beginner" },
+        { "title": "引导投票", "content": "利用安全优势积极引导投票方向。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "制造平票", "content": "在关键投票中故意制造平票来保护自己或队友。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "lover",
+      "beginnerTips": [
+        { "title": "谨慎链接", "content": "链接前要仔细判断，错误的链接可能害死队友。", "level": "beginner" },
+        { "title": "威慑鸭子", "content": "链接可以让鸭子不敢轻易击杀被链接的玩家。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "陷阱链接", "content": "将两个可疑玩家链接在一起，如果其中一个是鸭子被投出，另一个也会死。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "engineer",
+      "beginnerTips": [
+        { "title": "熟悉管道", "content": "先花时间熟悉地图上所有通风管道的入口和出口位置。", "level": "beginner" },
+        { "title": "避免被目击", "content": "使用管道时确保周围没有其他玩家，否则会被误认为鸭子。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "快速侦察", "content": "利用管道快速移动并短暂看到鸭子位置，获取关键情报。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "street-urchin",
+      "beginnerTips": [
+        { "title": "速刷任务", "content": "利用加速优势快速完成任务，推进任务进度条。", "level": "beginner" },
+        { "title": "多做任务", "content": "你是团队的任务主力，尽量多完成任务。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "任务路线优化", "content": "规划最优任务路线，最大化利用速度优势。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "celebrity",
+      "beginnerTips": [
+        { "title": "威慑存在", "content": "你的死亡会立即通知所有人，鸭子杀你风险很大。", "level": "beginner" },
+        { "title": "大胆行动", "content": "利用威慑效果大胆在地图上活动。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "诱饵战术", "content": "故意在偏僻区域活动，如果被杀全场立即知道，帮助锁定凶手位置。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "stalker",
+      "beginnerTips": [
+        { "title": "追踪可疑者", "content": "选择最可疑的玩家进行追踪，记录他们的行动轨迹。", "level": "beginner" },
+        { "title": "会议汇报", "content": "在会议中报告追踪到的位置信息。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "行为分析", "content": "通过追踪数据分析玩家的行为模式，判断是否在假装做任务。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "astral",
+      "beginnerTips": [
+        { "title": "安全侦察", "content": "灵魂出窍时可以安全地侦察任何区域。", "level": "beginner" },
+        { "title": "保护身体", "content": "出窍时身体无法移动，确保在安全位置再使用。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "远程监控", "content": "在关键时刻出窍监控可疑区域，获取第一手情报。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "duck",
+      "beginnerTips": [
+        { "title": "假装任务", "content": "站在任务面板前停留合适时间再离开，模拟真实完成任务。", "level": "beginner" },
+        { "title": "制造不在场证明", "content": "击杀后迅速前往人多的区域，与其他玩家一起行动。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "控制节奏", "content": "不要急于击杀，选择合适的时机和地点，在破坏发生时趁乱下手。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "assassin",
+      "beginnerTips": [
+        { "title": "观察行为", "content": "仔细观察每个玩家的行为特征，推断他们的角色。", "level": "beginner" },
+        { "title": "谨慎猜测", "content": "猜错角色会暴露自己，只在有把握时使用猜测能力。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "信息收集", "content": "通过多轮会议收集信息，在关键时刻精准猜测并击杀重要角色。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "professional",
+      "beginnerTips": [
+        { "title": "隐秘击杀", "content": "你的击杀尸体对普通鹅不可见，大胆在偏僻区域下手。", "level": "beginner" },
+        { "title": "注意特殊角色", "content": "殡仪员等特殊角色仍能看到尸体，不要掉以轻心。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "连续作案", "content": "利用尸体不可见的优势连续击杀，在被发现前最大化战果。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "silencer",
+      "beginnerTips": [
+        { "title": "沉默关键人", "content": "优先沉默掌握重要信息的玩家，如侦探或目击者。", "level": "beginner" },
+        { "title": "配合投票", "content": "在关键投票回合沉默可能指控你的玩家。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "心理战术", "content": "故意沉默无关紧要的玩家来迷惑鹅阵营，让他们猜不到你的意图。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "morphling",
+      "beginnerTips": [
+        { "title": "选择目标", "content": "变形为有明确不在场证明的玩家，击杀后更容易脱身。", "level": "beginner" },
+        { "title": "把握时机", "content": "在击杀前再变形，不要过早使用技能，变形持续时间有限。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "嫁祸栽赃", "content": "变形为特定玩家后故意做出可疑行为，让目击者在会议中指控被变形的玩家。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "cannibal",
+      "beginnerTips": [
+        { "title": "清理现场", "content": "击杀后立即吃掉尸体，消灭证据。", "level": "beginner" },
+        { "title": "配合队友", "content": "帮助其他鸭子清理他们的击杀现场。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "战略清理", "content": "优先清理在关键位置的尸体，防止被大量玩家发现。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "warlock",
+      "beginnerTips": [
+        { "title": "封锁通风口", "content": "关闭通风口限制工程师的移动能力。", "level": "beginner" },
+        { "title": "配合击杀", "content": "封锁区域后配合队友进行击杀。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "困兽之斗", "content": "在关键时刻封锁通风口，困住落单的鹅进行击杀。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "ninja",
+      "beginnerTips": [
+        { "title": "近身作战", "content": "击杀范围小但冷却快，需要靠近目标再下手。", "level": "beginner" },
+        { "title": "快速连杀", "content": "利用短冷却时间在合适时机快速连续击杀。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "闪电战", "content": "在破坏混乱时快速连续击杀多人，迅速结束游戏。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "vampire",
+      "beginnerTips": [
+        { "title": "延迟击杀", "content": "攻击后目标不会立即死亡，利用这段时间制造不在场证明。", "level": "beginner" },
+        { "title": "混淆时间线", "content": "延迟死亡让鹅难以判断击杀发生的时间和地点。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "多目标攻击", "content": "同时攻击多个目标，制造大规模混乱。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "snitch",
+      "beginnerTips": [
+        { "title": "独立投票", "content": "单独投票给想调查的玩家，获取他们的角色信息。", "level": "beginner" },
+        { "title": "隐藏意图", "content": "不要让投票模式太明显，避免被鹅察觉。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "情报网络", "content": "通过多轮投票收集多个玩家的角色信息，掌握全局。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "undertaker",
+      "beginnerTips": [
+        { "title": "拖走尸体", "content": "击杀后将尸体拖到不容易被发现的角落。", "level": "beginner" },
+        { "title": "制造迷惑", "content": "将尸体拖到其他区域，误导鹅的调查方向。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "栽赃嫁祸", "content": "将尸体拖到特定玩家附近，制造他们是凶手的假象。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "spy",
+      "beginnerTips": [
+        { "title": "监控管道", "content": "观察通风口内的玩家，发现使用管道的工程师。", "level": "beginner" },
+        { "title": "信息共享", "content": "将观察到的信息与鸭子队友分享。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "伏击战术", "content": "在通风口出口附近埋伏，等待工程师出来时击杀。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "hitman",
+      "beginnerTips": [
+        { "title": "击杀逃脱", "content": "击杀后立即进入通风口快速逃离现场。", "level": "beginner" },
+        { "title": "选择位置", "content": "在通风口附近击杀，确保能快速逃脱。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "闪击战术", "content": "从通风口出来击杀后立即钻回去，让目击者来不及反应。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "mystic",
+      "beginnerTips": [
+        { "title": "隐藏尸体", "content": "击杀后使用能力让尸体暂时不可见，争取时间。", "level": "beginner" },
+        { "title": "配合队友", "content": "为其他鸭子的击杀提供掩护。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "延迟发现", "content": "在关键时刻使用能力，延迟尸体被发现的时间，为团队争取更多击杀机会。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "ghost-duck",
+      "beginnerTips": [
+        { "title": "死后干扰", "content": "即使死亡也能继续干扰鹅阵营，发挥余热。", "level": "beginner" },
+        { "title": "持续贡献", "content": "利用幽灵能力为存活的鸭子队友提供支援。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "战略干扰", "content": "在关键时刻制造干扰，帮助队友完成击杀或逃脱。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "pigeon",
+      "beginnerTips": [
+        { "title": "接触感染", "content": "尽量靠近其他玩家进行感染，假装做任务时寻找机会。", "level": "beginner" },
+        { "title": "隐藏身份", "content": "不要暴露中立身份，被双方针对会很危险。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "系统感染", "content": "规划感染路线，确保在游戏结束前感染所有存活玩家。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "vulture",
+      "beginnerTips": [
+        { "title": "跟踪可疑者", "content": "远远跟踪行为可疑的玩家，在击杀发生后迅速前往吃掉尸体。", "level": "beginner" },
+        { "title": "注意隐蔽", "content": "吃尸体时确保周围没有其他玩家，被发现会非常可疑。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "预判击杀", "content": "根据游戏节奏和鸭子的行为模式，预判下一次击杀可能发生的位置。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "falcon",
+      "beginnerTips": [
+        { "title": "平衡击杀", "content": "不要过早暴露攻击性，保持低调逐步消灭对手。", "level": "beginner" },
+        { "title": "灵活站队", "content": "根据局势在鹅鸭之间灵活周旋，确保自己存活。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "最后赢家", "content": "在游戏后期发力，利用鹅鸭对抗消耗双方，最终成为最后存活者。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "crow",
+      "beginnerTips": [
+        { "title": "低调行事", "content": "避免引起任何注意，不要主动参与争论。", "level": "beginner" },
+        { "title": "安全存活", "content": "专注于存活，远离危险区域和可疑玩家。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "隐身术", "content": "融入人群，表现得像普通鹅一样做任务，让所有人忽略你的存在。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "dodo",
+      "beginnerTips": [
+        { "title": "制造平局", "content": "你的目标是游戏平局，尝试在鹅鸭之间制造平衡。", "level": "beginner" },
+        { "title": "搅局策略", "content": "在会议中适当搅局，阻止任何一方快速获胜。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "精准平衡", "content": "精确计算双方实力，在关键投票中投出影响平衡的一票。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "parrot",
+      "beginnerTips": [
+        { "title": "模仿投票", "content": "利用模仿能力隐藏自己的真实投票意图。", "level": "beginner" },
+        { "title": "观察投票", "content": "通过模仿不同玩家的投票来收集信息。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "操控投票", "content": "在关键投票中模仿特定玩家的投票，影响投票结果。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "dinosaur",
+      "beginnerTips": [
+        { "title": "前期隐藏", "content": "游戏初期保持低调，等待成长完成。", "level": "beginner" },
+        { "title": "耐心等待", "content": "不要急于行动，随时间成长你会变得越来越强。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "后期制霸", "content": "成长完成后利用无敌优势强势行动，主导游戏走向。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "wolf",
+      "beginnerTips": [
+        { "title": "夜间行动", "content": "在夜间变身获得增强能力，利用黑暗掩护行动。", "level": "beginner" },
+        { "title": "白天低调", "content": "白天保持低调，不要暴露自己的特殊身份。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "昼夜切换", "content": "精准把握昼夜切换时机，在变身瞬间发动突袭。", "level": "advanced" }
+      ]
+    },
+    {
+      "roleId": "snowman",
+      "beginnerTips": [
+        { "title": "利用环境", "content": "在雪地地图中你有特殊优势，充分利用地形。", "level": "beginner" },
+        { "title": "地图选择", "content": "在雪地地图中发挥最大作用。", "level": "beginner" }
+      ],
+      "advancedTips": [
+        { "title": "环境掌控", "content": "利用雪地环境优势控制关键区域，影响游戏走向。", "level": "advanced" }
+      ]
+    }
+  ],
+  "gooseDetectionTips": [
+    { "title": "观察任务行为", "content": "注意观察其他玩家是否真的在做任务。鸭子只能假装做任务，任务进度条不会因为鸭子的假动作而增长。", "level": "beginner" },
+    { "title": "记录玩家位置", "content": "记住每个玩家的大致位置和移动路线，如果有人频繁出现在案发现场附近，很可能是鸭子。", "level": "beginner" },
+    { "title": "注意通风管道", "content": "只有鸭子和工程师可以使用通风管道，如果看到有人从管道出来，要特别留意。", "level": "beginner" },
+    { "title": "观察任务时长", "content": "不同任务有不同的完成时间，如果有人在任务面板前停留时间明显不对，可能在假装。", "level": "beginner" },
+    { "title": "分析会议发言", "content": "注意会议中每个人的发言内容和态度，鸭子可能会故意引导投票方向或提供虚假信息。", "level": "advanced" },
+    { "title": "利用视觉任务验证", "content": "某些任务有视觉效果（如医疗扫描），可以通过观察这些效果来验证玩家是否真的在做任务。", "level": "advanced" },
+    { "title": "投票模式分析", "content": "分析每轮投票的模式，鸭子往往会投票给无辜的鹅或跟风投票。", "level": "advanced" },
+    { "title": "行为一致性检查", "content": "观察玩家在多轮游戏中的行为是否一致，突然改变行为模式的玩家值得怀疑。", "level": "advanced" }
+  ],
+  "duckDisguiseTips": [
+    { "title": "学会假装做任务", "content": "站在任务面板前停留合适的时间再离开，模拟真实完成任务的过程。不同任务的完成时间不同，要记住常见任务的时长。", "level": "beginner" },
+    { "title": "建立不在场证明", "content": "击杀后迅速前往人多的区域，与其他玩家一起行动，让自己有明确的不在场证明。", "level": "beginner" },
+    { "title": "合理使用破坏", "content": "在合适的时机使用破坏技能，可以分散鹅阵营的注意力，为击杀创造机会。", "level": "beginner" },
+    { "title": "自然发言", "content": "在会议中不要过于沉默也不要过于活跃，保持自然的发言节奏。", "level": "beginner" },
+    { "title": "控制击杀节奏", "content": "不要急于击杀，选择合适的时机和地点。在人少的区域、监控盲区或破坏发生时下手成功率更高。", "level": "advanced" },
+    { "title": "反向推理防御", "content": "在会议中主动提供有价值的信息（但不要暴露队友），建立信任感，降低被怀疑的概率。", "level": "advanced" },
+    { "title": "团队配合", "content": "与鸭子队友配合，一个人吸引注意力，另一个人趁机击杀。互相提供不在场证明。", "level": "advanced" },
+    { "title": "心理操控", "content": "利用反向心理学，故意表现出轻微可疑来洗清嫌疑，或提供半真半假的信息误导鹅阵营。", "level": "advanced" }
+  ]
+}

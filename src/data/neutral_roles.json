@@ -1,0 +1,430 @@
+[
+  {
+    "id": "pigeon",
+    "name": "鸽子",
+    "nameEn": "Pigeon",
+    "faction": "neutral",
+    "skillDescription": "需要感染所有存活玩家（近距离接触）",
+    "usageTips": "假装做任务，寻找接触机会感染所有人",
+    "difficulty": "hard",
+    "winCondition": "感染所有存活玩家",
+    "commonStrategies": [
+      "接触感染：近距离接触感染玩家",
+      "伪装行动：假装做任务混入人群",
+      "时机选择：在人少时更容易感染",
+      "隐蔽感染：避免被发现感染行为"
+    ],
+    "precautions": [
+      "感染需要近距离",
+      "可能被鸭子击杀",
+      "小心被鹅怀疑",
+      "注意感染进度"
+    ],
+    "dialogues": [
+      "感染时：'我感染了A，还剩X人'",
+      "伪装：'我普通玩家，在做任务'",
+      "被怀疑时：'我不是鸽子，刚才在XX'",
+      "会议发言：'有人被感染了，可能是鸽子'"
+    ],
+    "slang": [
+      "传染源：感染玩家的鸽子",
+      "接触传播者：通过接触传播",
+      "病毒鸭：像病毒一样传播",
+      "感染大师"
+    ],
+    "counterRoles": ["assassin", "professional", "sheriff"],
+    "synergyRoles": [],
+    "addedInVersion": "1.0",
+    "isSeasonal": false,
+    "popularity": 60
+  },
+  {
+    "id": "vulture",
+    "name": "秃鹫",
+    "nameEn": "Vulture",
+    "faction": "neutral",
+    "skillDescription": "需要吃掉一定数量的尸体",
+    "usageTips": "寻找尸体，与鸭子合作或竞争",
+    "difficulty": "medium",
+    "winCondition": "吃掉指定数量的尸体",
+    "commonStrategies": [
+      "尸体寻找：主动寻找尸体",
+      "与鸭合作：与鸭子合作获取尸体",
+      "时机把握：在混乱时吃尸体",
+      "隐蔽行动：避免被看到吃尸体"
+    ],
+    "precautions": [
+      "吃尸体可能被看到",
+      "可能被鸭子击杀",
+      "小心被鹅怀疑",
+      "注意尸体数量"
+    ],
+    "dialogues": [
+      "吃尸体：'我吃了尸体，还剩X个'",
+      "伪装：'我普通玩家，刚才在...'",
+      "被怀疑时：'我不是秃鹫，刚才在XX'",
+      "会议发言：'尸体少了，可能是秃鹫'"
+    ],
+    "slang": [
+      "食尸鸟：吃尸体的秃鹫",
+      "尸体清理工：清理尸体的玩家",
+      "腐食者：吃腐肉的角色",
+      "尸体猎人"
+    ],
+    "counterRoles": ["cannibal", "professional", "sheriff"],
+    "synergyRoles": ["duck", "cannibal"],
+    "addedInVersion": "1.0",
+    "isSeasonal": false,
+    "popularity": 55
+  },
+  {
+    "id": "falcon",
+    "name": "猎鹰",
+    "nameEn": "Falcon",
+    "faction": "neutral",
+    "skillDescription": "可以杀死玩家，但必须活到最后",
+    "usageTips": "平衡击杀，避免成为众矢之的",
+    "difficulty": "very_hard",
+    "winCondition": "成为最后存活的玩家",
+    "commonStrategies": [
+      "平衡击杀：合理控制击杀数量",
+      "伪装身份：假装正义使者等",
+      "时机把握：关键时刻击杀",
+      "生存优先：保证自己存活"
+    ],
+    "precautions": [
+      "需要活到最后",
+      "可能被双方针对",
+      "小心加拿大鹅报警",
+      "注意网红报警"
+    ],
+    "dialogues": [
+      "伪装：'我正义使者，只有一次机会'",
+      "杀人后：'我猎鹰，需要活到最后'",
+      "被怀疑时：'我不是猎鹰，我是XX'",
+      "会议发言：'最后存活可能是猎鹰'"
+    ],
+    "slang": [
+      "独狼：单独作战的猎鹰",
+      "生存大师：擅长存活的玩家",
+      "最后幸存者：活到最后的角色",
+      "孤高の猎手"
+    ],
+    "counterRoles": ["canadian_goose", "celebrity", "sheriff"],
+    "synergyRoles": [],
+    "addedInVersion": "1.0",
+    "isSeasonal": false,
+    "popularity": 50
+  },
+  {
+    "id": "raven",
+    "name": "乌鸦",
+    "nameEn": "Raven",
+    "faction": "neutral",
+    "skillDescription": "需要在一定时间内不被投票出局",
+    "usageTips": "低调行事，避免引起注意",
+    "difficulty": "medium",
+    "winCondition": "存活到时间结束",
+    "commonStrategies": [
+      "低调行事：避免引起注意",
+      "伪装身份：假装普通玩家",
+      "时间管理：注意剩余时间",
+      "避免冲突：不参与激烈争论"
+    ],
+    "precautions": [
+      "时间有限",
+      "可能被误投",
+      "小心被鸭子击杀",
+      "注意时间进度"
+    ],
+    "dialogues": [
+      "伪装：'我普通玩家，在做任务'",
+      "被怀疑时：'我不是乌鸦，刚才在XX'",
+      "会议发言：'大家冷静，别乱投票'",
+      "时间快到：'快结束了，坚持住'"
+    ],
+    "slang": [
+      "时间幸存者：靠时间存活的乌鸦",
+      "低调王者：低调行事的玩家",
+      "计时器：关注时间的角色",
+      "生存倒计时"
+    ],
+    "counterRoles": ["assassin", "professional", "sheriff"],
+    "synergyRoles": [],
+    "addedInVersion": "1.1",
+    "isSeasonal": false,
+    "popularity": 45
+  },
+  {
+    "id": "dodo",
+    "name": "渡渡鸟/呆呆鸟",
+    "nameEn": "Dodo/Dodo Bird",
+    "faction": "neutral",
+    "skillDescription": "被投票出局才能获胜",
+    "usageTips": "必须被投票出局才会赢，没有技能",
+    "difficulty": "hard",
+    "winCondition": "被投票出局",
+    "commonStrategies": [
+      "行为可疑：做出可疑行为引起怀疑",
+      "发言矛盾：发言自相矛盾",
+      "避免被杀：小心被鸭子击杀",
+      "投票引导：引导大家投票给你"
+    ],
+    "precautions": [
+      "不能被杀死",
+      "可能被识破",
+      "小心被鸭子击杀",
+      "需要高超的演技"
+    ],
+    "dialogues": [
+      "可疑发言：'我...我刚才在...呃...'",
+      "被怀疑时：'我不是呆呆鸟，真的不是'",
+      "会议发言：'投我试试？我可能是呆呆鸟'",
+      "胜利时：'哈哈，我真是呆呆鸟'"
+    ],
+    "slang": [
+      "演员：假装可疑的呆呆鸟",
+      "求投王：求被投票的玩家",
+      "奥斯卡影帝：演技高超的呆呆鸟",
+      "投票胜利者"
+    ],
+    "counterRoles": ["assassin", "professional", "sheriff"],
+    "synergyRoles": [],
+    "addedInVersion": "1.1",
+    "isSeasonal": false,
+    "popularity": 65
+  },
+  {
+    "id": "dueling_dodos",
+    "name": "决斗呆呆鸟",
+    "nameEn": "Dueling Dodos",
+    "faction": "neutral",
+    "skillDescription": "在另一只呆呆鸟死后被投票淘汰才能获胜",
+    "usageTips": "完成虚假任务以获得杀死其他呆呆鸟的能力",
+    "difficulty": "very_hard",
+    "winCondition": "另一只呆呆鸟死后被投票淘汰",
+    "commonStrategies": [
+      "寻找对手：找到另一只呆呆鸟",
+      "任务完成：完成虚假任务获得能力",
+      "击杀对手：击杀另一只呆呆鸟",
+      "引导投票：引导大家投票给你"
+    ],
+    "precautions": [
+      "需要找到对手",
+      "可能被误杀",
+      "小心被鸭子击杀",
+      "需要完成特定任务"
+    ],
+    "dialogues": [
+      "找到对手：'我找到另一只呆呆鸟了'",
+      "任务后：'我完成了任务，可以杀他了'",
+      "被怀疑时：'我不是决斗呆呆鸟'",
+      "会议发言：'有两只呆呆鸟在对决'"
+    ],
+    "slang": [
+      "对决者：决斗的呆呆鸟",
+      "任务达人：完成任务的玩家",
+      "宿敌对决：两只呆呆鸟的对决",
+      "生死决斗"
+    ],
+    "counterRoles": ["assassin", "professional", "sheriff"],
+    "synergyRoles": ["dodo"],
+    "addedInVersion": "1.2",
+    "isSeasonal": false,
+    "popularity": 40
+  },
+  {
+    "id": "pelican",
+    "name": "鹈鹕",
+    "nameEn": "Pelican",
+    "faction": "neutral",
+    "skillDescription": "可以吞下玩家，成为最后幸存者获胜",
+    "usageTips": "吞下所有人直至获得胜利",
+    "difficulty": "hard",
+    "winCondition": "成为最后存活的玩家",
+    "commonStrategies": [
+      "吞人策略：合理选择吞人目标",
+      "时机把握：在人群分散时吞人",
+      "伪装身份：假装其他角色",
+      "生存优先：保证自己存活"
+    ],
+    "precautions": [
+      "吞人后目标还活着",
+      "可能被双方针对",
+      "小心加拿大鹅报警",
+      "注意网红报警"
+    ],
+    "dialogues": [
+      "吞人后：'我吞了A，他还活着'",
+      "伪装：'我普通玩家，刚才在...'",
+      "被怀疑时：'我不是鹈鹕，刚才在XX'",
+      "会议发言：'有人被吞了，可能是鹈鹕'"
+    ],
+    "slang": [
+      "大嘴鸟：吞人的鹈鹕",
+      "吞噬者：吞食玩家的角色",
+      "活体监狱：关押玩家的鹈鹕",
+      "最终幸存者"
+    ],
+    "counterRoles": ["canadian_goose", "celebrity", "sheriff"],
+    "synergyRoles": [],
+    "addedInVersion": "1.2",
+    "isSeasonal": false,
+    "popularity": 55
+  },
+  {
+    "id": "parrot",
+    "name": "鹦鹉",
+    "nameEn": "Parrot",
+    "faction": "neutral",
+    "skillDescription": "可以模仿其他玩家的投票",
+    "usageTips": "隐藏投票意图，制造混乱",
+    "difficulty": "medium",
+    "winCondition": "根据模式不同而变化",
+    "commonStrategies": [
+      "投票模仿：模仿他人投票",
+      "信息隐藏：隐藏真实意图",
+      "混乱制造：制造投票混乱",
+      "时机把握：关键时刻模仿"
+    ],
+    "precautions": [
+      "模仿可能被识破",
+      "可能被双方针对",
+      "小心被鸭子击杀",
+      "注意投票模式"
+    ],
+    "dialogues": [
+      "模仿后：'我模仿了A的投票'",
+      "伪装：'我普通玩家，刚才在...'",
+      "被怀疑时：'我不是鹦鹉，刚才在XX'",
+      "会议发言：'投票结果奇怪，可能有鹦鹉'"
+    ],
+    "slang": [
+      "学舌鸟：模仿投票的鹦鹉",
+      "投票模仿者：模仿他人投票",
+      "混乱制造者：制造投票混乱",
+      "影帝3.0"
+    ],
+    "counterRoles": ["assassin", "professional", "sheriff"],
+    "synergyRoles": [],
+    "addedInVersion": "1.3",
+    "isSeasonal": false,
+    "popularity": 35
+  },
+  {
+    "id": "dinosaur",
+    "name": "恐龙",
+    "nameEn": "Dinosaur",
+    "faction": "neutral",
+    "skillDescription": "随时间成长，最终变得无敌",
+    "usageTips": "前期隐藏，后期强势",
+    "difficulty": "hard",
+    "winCondition": "根据模式不同而变化",
+    "commonStrategies": [
+      "前期隐藏：前期低调发育",
+      "成长管理：合理管理成长进度",
+      "后期强势：成长后发挥优势",
+      "时机把握：把握强势时机"
+    ],
+    "precautions": [
+      "前期很弱",
+      "可能被前期击杀",
+      "小心被双方针对",
+      "注意成长进度"
+    ],
+    "dialogues": [
+      "成长后：'我成长了，现在很强'",
+      "伪装：'我普通玩家，刚才在...'",
+      "被怀疑时：'我不是恐龙，刚才在XX'",
+      "会议发言：'有角色在成长，可能是恐龙'"
+    ],
+    "slang": [
+      "成长型：随时间变强的恐龙",
+      "后期英雄：后期强势的角色",
+      "进化者：不断进化的玩家",
+      "时间的朋友"
+    ],
+    "counterRoles": ["assassin", "professional", "sheriff"],
+    "synergyRoles": [],
+    "addedInVersion": "1.4",
+    "isSeasonal": false,
+    "popularity": 30
+  },
+  {
+    "id": "wolf",
+    "name": "狼",
+    "nameEn": "Wolf",
+    "faction": "neutral",
+    "skillDescription": "夜间可以变身，获得增强能力",
+    "usageTips": "利用夜间优势行动",
+    "difficulty": "hard",
+    "winCondition": "根据模式不同而变化",
+    "commonStrategies": [
+      "夜间行动：在夜间发挥优势",
+      "变身利用：合理使用变身能力",
+      "时机把握：把握夜间时机",
+      "伪装隐藏：白天伪装普通玩家"
+    ],
+    "precautions": [
+      "白天较弱",
+      "可能被白天击杀",
+      "小心被双方针对",
+      "注意昼夜交替"
+    ],
+    "dialogues": [
+      "夜间：'夜晚到了，我变强了'",
+      "伪装：'我普通玩家，刚才在...'",
+      "被怀疑时：'我不是狼，刚才在XX'",
+      "会议发言：'夜间有异常，可能是狼'"
+    ],
+    "slang": [
+      "夜行侠：夜间行动的狼",
+      "昼夜行者：昼夜不同的角色",
+      "月下猎手：月光下的猎人",
+      "变身体"
+    ],
+    "counterRoles": ["assassin", "professional", "sheriff"],
+    "synergyRoles": [],
+    "addedInVersion": "1.4",
+    "isSeasonal": false,
+    "popularity": 25
+  },
+  {
+    "id": "snowman",
+    "name": "雪人",
+    "nameEn": "Snowman",
+    "faction": "neutral",
+    "skillDescription": "在雪地地图有优势",
+    "usageTips": "利用环境优势",
+    "difficulty": "medium",
+    "winCondition": "根据模式不同而变化",
+    "commonStrategies": [
+      "地图利用：在雪地地图发挥优势",
+      "环境利用：利用雪地环境",
+      "伪装隐藏：在其他地图伪装",
+      "时机把握：把握地图优势"
+    ],
+    "precautions": [
+      "只在雪地有优势",
+      "其他地图较弱",
+      "可能被针对",
+      "注意地图类型"
+    ],
+    "dialogues": [
+      "雪地：'在雪地我有优势'",
+      "伪装：'我普通玩家，刚才在...'",
+      "被怀疑时：'我不是雪人，刚才在XX'",
+      "会议发言：'雪地有优势角色，可能是雪人'"
+    ],
+    "slang": [
+      "环境特化：特定环境强的雪人",
+      "雪地之王：雪地的强者",
+      "季节角色：季节性优势",
+      "地图专家"
+    ],
+    "counterRoles": ["assassin", "professional", "sheriff"],
+    "synergyRoles": [],
+    "addedInVersion": "1.5",
+    "isSeasonal": true,
+    "popularity": 20
+  }]

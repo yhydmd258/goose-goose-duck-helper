@@ -1,0 +1,430 @@
+[
+  {
+    "id": "hitman",
+    "name": "杀手",
+    "nameEn": "Hitman",
+    "faction": "duck",
+    "skillDescription": "击杀后可以立即进入通风口",
+    "usageTips": "快速逃脱，减少被目击几率",
+    "difficulty": "medium",
+    "winCondition": "杀死足够多的鹅或成功完成破坏",
+    "commonStrategies": [
+      "快速逃脱：杀人后立即进管道",
+      "连续击杀：利用逃脱能力连续杀",
+      "位置迷惑：通过管道快速移动",
+      "配合使用：与其他能力配合"
+    ],
+    "precautions": [
+      "管道可能被术士关闭",
+      "可能被窥视者看到",
+      "小心加拿大鹅报警",
+      "注意网红报警"
+    ],
+    "dialogues": [
+      "杀人后：'我杀手，杀人后进管道'",
+      "伪装：'我普通鸭，刚才在...'",
+      "被怀疑时：'我不是杀手，刚才在XX'",
+      "会议发言：'杀人后消失可能是杀手'"
+    ],
+    "slang": [
+      "逃脱大师：杀人后逃跑的杀手",
+      "管道刺客：利用管道的鸭子",
+      "瞬移杀手：快速移动的玩家",
+      "消失的凶手"
+    ],
+    "counterRoles": ["sorcerer", "voyeur", "canadian_goose"],
+    "synergyRoles": ["silencer", "professional"],
+    "addedInVersion": "1.2",
+    "isSeasonal": false,
+    "popularity": 50
+  },
+  {
+    "id": "mystic",
+    "name": "神秘主义者",
+    "nameEn": "Mystic",
+    "faction": "duck",
+    "skillDescription": "可以暂时让尸体对所有人不可见",
+    "usageTips": "延迟尸体发现时间",
+    "difficulty": "medium",
+    "winCondition": "杀死足够多的鹅或成功完成破坏",
+    "commonStrategies": [
+      "时间延迟：延迟尸体发现",
+      "信息控制：控制尸体信息",
+      "配合杀人：队友杀人你隐藏",
+      "战略使用：关键时刻使用"
+    ],
+    "precautions": [
+      "隐藏时间有限",
+      "可能被识破",
+      "小心加拿大鹅报警",
+      "注意网红报警"
+    ],
+    "dialogues": [
+      "隐藏后：'我隐藏了尸体，暂时看不到'",
+      "伪装：'我普通鸭，刚才在...'",
+      "被怀疑时：'我不是神秘主义者，刚才在XX'",
+      "会议发言：'尸体突然出现可能被隐藏过'"
+    ],
+    "slang": [
+      "尸体魔术师：隐藏尸体的鸭子",
+      "时间操控者：延迟发现的玩家",
+      "隐形 cloak：隐藏证据",
+      "现场管理者"
+    ],
+    "counterRoles": ["medium", "birdwatcher", "canadian_goose"],
+    "synergyRoles": ["professional", "cannibal"],
+    "addedInVersion": "1.3",
+    "isSeasonal": false,
+    "popularity": 45
+  },
+  {
+    "id": "spy",
+    "name": "间谍",
+    "nameEn": "Spy",
+    "faction": "duck",
+    "skillDescription": "如果你是唯一投票给某玩家的，回到游戏后你可以看到这位玩家的角色",
+    "usageTips": "通过投票获取角色信息",
+    "difficulty": "hard",
+    "winCondition": "杀死足够多的鹅或成功完成破坏",
+    "commonStrategies": [
+      "信息窃取：通过投票获取信息",
+      "投票操控：控制投票获取目标",
+      "信息分析：分析获取的角色信息",
+      "配合刺客：为刺客提供目标"
+    ],
+    "precautions": [
+      "需要单独投票",
+      "可能暴露身份",
+      "信息获取有限",
+      "需要投票技巧"
+    ],
+    "dialogues": [
+      "投票后：'我单独投了A，看到他是XX'",
+      "伪装：'我普通鸭，刚才在...'",
+      "被怀疑时：'我不是间谍，刚才在XX'",
+      "会议发言：'我怀疑A所以投了他'"
+    ],
+    "slang": [
+      "投票窃贼：偷看角色的间谍",
+      "信息间谍：获取信息的鸭子",
+      "投票黑客：操控投票的玩家",
+      "角色侦探鸭"
+    ],
+    "counterRoles": ["politician", "celebrity"],
+    "synergyRoles": ["assassin", "informer"],
+    "addedInVersion": "1.3",
+    "isSeasonal": false,
+    "popularity": 40
+  },
+  {
+    "id": "mute_duck",
+    "name": "静音鸭",
+    "nameEn": "Mute Duck",
+    "faction": "duck",
+    "skillDescription": "可以静音其他玩家，被静音玩家无法在会议中说话",
+    "usageTips": "让关键信息提供者无法说话",
+    "difficulty": "medium",
+    "winCondition": "杀死足够多的鹅或成功完成破坏",
+    "commonStrategies": [
+      "关键静音：静音侦探、通灵者等",
+      "信息封锁：控制会议信息",
+      "配合击杀：静音后击杀",
+      "战略使用：关键时刻使用"
+    ],
+    "precautions": [
+      "静音有时间限制",
+      "可能被识破",
+      "小心加拿大鹅报警",
+      "注意网红报警"
+    ],
+    "dialogues": [
+      "静音后：'我静音了A，他说不了话'",
+      "伪装：'我普通鸭，刚才在...'",
+      "被怀疑时：'我不是静音鸭，刚才在XX'",
+      "会议发言：'A不说话可能是被静音了'"
+    ],
+    "slang": [
+      "禁言鸭2.0：升级版静音",
+      "哑巴制造机：让人说不了话",
+      "信息封锁者：控制信息的鸭子",
+      "会议操控者2.0"
+    ],
+    "counterRoles": ["canadian_goose", "celebrity"],
+    "synergyRoles": ["silencer", "assassin"],
+    "addedInVersion": "1.3",
+    "isSeasonal": false,
+    "popularity": 35
+  },
+  {
+    "id": "party_duck",
+    "name": "派对鸭",
+    "nameEn": "Party Duck",
+    "faction": "duck",
+    "skillDescription": "会议期间可以让某位玩家的声音变高变尖",
+    "usageTips": "通过变声器来伪装自己或扰乱会议",
+    "difficulty": "easy",
+    "winCondition": "杀死足够多的鹅或成功完成破坏",
+    "commonStrategies": [
+      "声音扰乱：扰乱会议讨论",
+      "身份伪装：改变声音伪装",
+      "会议操控：影响会议氛围",
+      "娱乐效果：增加游戏趣味"
+    ],
+    "precautions": [
+      "变声效果明显",
+      "可能暴露身份",
+      "实用价值有限",
+      "可能被识破"
+    ],
+    "dialogues": [
+      "变声后：'我让A声音变了，好玩'",
+      "伪装：'我普通鸭，刚才在...'",
+      "被怀疑时：'我不是派对鸭，刚才在XX'",
+      "会议发言：'谁声音变了？可能是派对鸭'"
+    ],
+    "slang": [
+      "变声鸭：改变声音的鸭子",
+      "声音魔术师：操控声音的玩家",
+      "娱乐鸭：增加趣味的角色",
+      "会议搞笑担当"
+    ],
+    "counterRoles": ["canadian_goose", "celebrity"],
+    "synergyRoles": ["silencer", "mute_duck"],
+    "addedInVersion": "1.4",
+    "isSeasonal": false,
+    "popularity": 30
+  },
+  {
+    "id": "demolitionist",
+    "name": "爆炸王",
+    "nameEn": "Demolitionist",
+    "faction": "duck",
+    "skillDescription": "可以在其他玩家身上放置炸弹",
+    "usageTips": "制造连锁爆炸，造成群体伤害",
+    "difficulty": "hard",
+    "winCondition": "杀死足够多的鹅或成功完成破坏",
+    "commonStrategies": [
+      "连锁爆炸：放置炸弹制造连锁",
+      "群体伤害：一次伤害多个玩家",
+      "时机选择：在人群密集时使用",
+      "配合使用：与其他能力配合"
+    ],
+    "precautions": [
+      "炸弹有倒计时",
+      "可能炸到自己",
+      "小心加拿大鹅报警",
+      "注意网红报警"
+    ],
+    "dialogues": [
+      "放置后：'我放了炸弹在A身上'",
+      "伪装：'我普通鸭，刚才在...'",
+      "被怀疑时：'我不是爆炸王，刚才在XX'",
+      "会议发言：'有炸弹，可能是爆炸王'"
+    ],
+    "slang": [
+      "炸弹鸭：放炸弹的鸭子",
+      "爆破专家：擅长爆炸的玩家",
+      "连锁杀手：制造连锁爆炸",
+      "群体伤害大师"
+    ],
+    "counterRoles": ["adventurer", "canadian_goose"],
+    "synergyRoles": ["silencer", "professional"],
+    "addedInVersion": "1.4",
+    "isSeasonal": false,
+    "popularity": 40
+  },
+  {
+    "id": "identity_thief",
+    "name": "身份窃贼",
+    "nameEn": "Identity Thief",
+    "faction": "duck",
+    "skillDescription": "在召集会议之前，你会变形成你最近杀害的受害者",
+    "usageTips": "杀谁就披着谁的皮，不要和别人对话",
+    "difficulty": "very_hard",
+    "winCondition": "杀死足够多的鹅或成功完成破坏",
+    "commonStrategies": [
+      "身份伪装：变成受害者样子",
+      "信息误导：制造混乱信息",
+      "谨慎使用：注意变形时机",
+      "配合队友：与队友互保"
+    ],
+    "precautions": [
+      "变形有时间限制",
+      "可能被识破",
+      "小心加拿大鹅报警",
+      "注意网红报警"
+    ],
+    "dialogues": [
+      "变形后：'我变成了A的样子'",
+      "伪装：'我是A，刚才在...'",
+      "被怀疑时：'我不是身份窃贼，我是真A'",
+      "会议发言：'我看到B变成了C的样子'"
+    ],
+    "slang": [
+      "盗号鸭：偷身份的鸭子",
+      "伪装大师2.0：升级版变形",
+      "替身使者2.0：使用替身",
+      "身份小偷"
+    ],
+    "counterRoles": ["tracker", "birdwatcher", "canadian_goose"],
+    "synergyRoles": ["morphling", "invisible"],
+    "addedInVersion": "1.4",
+    "isSeasonal": false,
+    "popularity": 35
+  },
+  {
+    "id": "invisible",
+    "name": "隐形鸭",
+    "nameEn": "Invisible",
+    "faction": "duck",
+    "skillDescription": "可以隐形5秒，使用技能后请尽快刀人",
+    "usageTips": "隐形杀人，减少被目击几率",
+    "difficulty": "medium",
+    "winCondition": "杀死足够多的鹅或成功完成破坏",
+    "commonStrategies": [
+      "隐形击杀：隐形后杀人",
+      "逃脱使用：隐形逃脱",
+      "侦察使用：隐形侦察",
+      "配合使用：与其他能力配合"
+    ],
+    "precautions": [
+      "隐形时间短",
+      "可能被听到声音",
+      "小心加拿大鹅报警",
+      "注意网红报警"
+    ],
+    "dialogues": [
+      "隐形后：'我隐形了，去杀人'",
+      "伪装：'我普通鸭，刚才在...'",
+      "被怀疑时：'我不是隐形鸭，刚才在XX'",
+      "会议发言：'突然消失可能是隐形鸭'"
+    ],
+    "slang": [
+      "隐身刺客：隐形的鸭子",
+      "透明杀手：看不见的玩家",
+      "幽灵鸭：像幽灵一样",
+      "消失的凶手2.0"
+    ],
+    "counterRoles": ["birdwatcher", "canadian_goose", "celebrity"],
+    "synergyRoles": ["silencer", "professional"],
+    "addedInVersion": "1.5",
+    "isSeasonal": false,
+    "popularity": 45
+  },
+  {
+    "id": "serial_killer",
+    "name": "连环杀手",
+    "nameEn": "Serial Killer",
+    "faction": "duck",
+    "skillDescription": "杀死你的目标会减少你的冷却时间，相反杀死其他人会增加",
+    "usageTips": "专注于击杀特定目标，避免杀错人",
+    "difficulty": "very_hard",
+    "winCondition": "杀死足够多的鹅或成功完成破坏",
+    "commonStrategies": [
+      "目标专注：专注于特定目标",
+      "冷却管理：合理管理冷却时间",
+      "信息获取：获取目标信息",
+      "谨慎击杀：避免杀错人"
+    ],
+    "precautions": [
+      "杀错人冷却变长",
+      "目标可能难杀",
+      "小心加拿大鹅报警",
+      "注意网红报警"
+    ],
+    "dialogues": [
+      "杀人后：'我杀了目标，冷却减少了'",
+      "伪装：'我普通鸭，刚才在...'",
+      "被怀疑时：'我不是连环杀手，刚才在XX'",
+      "会议发言：'连续杀人可能是连环杀手'"
+    ],
+    "slang": [
+      "目标猎手：专注目标的杀手",
+      "冷却管理大师：管理冷却的玩家",
+      "专业刺客：专业杀特定目标",
+      "精准杀手"
+    ],
+    "counterRoles": ["canadian_goose", "celebrity", "bodyguard"],
+    "synergyRoles": ["silencer", "professional"],
+    "addedInVersion": "1.5",
+    "isSeasonal": false,
+    "popularity": 30
+  },
+  {
+    "id": "sin_eater",
+    "name": "食罪者",
+    "nameEn": "Sin Eater",
+    "faction": "duck",
+    "skillDescription": "食罪者可以通过收集腐化物而引发一场爆炸，爆炸会杀死一定范围内的玩家",
+    "usageTips": "收集腐化物，制造大范围爆炸",
+    "difficulty": "hard",
+    "winCondition": "杀死足够多的鹅或成功完成破坏",
+    "commonStrategies": [
+      "腐化收集：收集腐化物",
+      "爆炸时机：选择人群密集时爆炸",
+      "范围伤害：造成大范围伤害",
+      "配合使用：与其他能力配合"
+    ],
+    "precautions": [
+      "可能炸到自己",
+      "收集需要时间",
+      "小心加拿大鹅报警",
+      "注意网红报警"
+    ],
+    "dialogues": [
+      "收集后：'我收集了腐化物，准备爆炸'",
+      "伪装：'我普通鸭，刚才在...'",
+      "被怀疑时：'我不是食罪者，刚才在XX'",
+      "会议发言：'有腐化物，可能是食罪者'"
+    ],
+    "slang": [
+      "腐化鸭：收集腐化物的鸭子",
+      "爆炸艺术家：擅长爆炸的玩家",
+      "范围杀手：大范围击杀",
+      "腐化收集者"
+    ],
+    "counterRoles": ["adventurer", "demon_hunter", "canadian_goose"],
+    "synergyRoles": ["demolitionist", "professional"],
+    "addedInVersion": "2.0",
+    "isSeasonal": false,
+    "popularity": 25
+  },
+  {
+    "id": "high_priest",
+    "name": "大祭司",
+    "nameEn": "High Priest",
+    "faction": "duck",
+    "skillDescription": "特殊宗教角色，有独特的仪式和能力",
+    "usageTips": "使用宗教仪式影响游戏",
+    "difficulty": "very_hard",
+    "winCondition": "杀死足够多的鹅或成功完成破坏",
+    "commonStrategies": [
+      "仪式使用：使用特殊仪式",
+      "宗教影响：利用宗教元素",
+      "配合使用：与腐化模式配合",
+      "谨慎使用：注意仪式时机"
+    ],
+    "precautions": [
+      "能力复杂",
+      "可能暴露身份",
+      "小心加拿大鹅报警",
+      "注意网红报警"
+    ],
+    "dialogues": [
+      "使用后：'我使用了仪式，效果...'",
+      "伪装：'我普通鸭，刚才在...'",
+      "被怀疑时：'我不是大祭司，刚才在XX'",
+      "会议发言：'有宗教元素，可能是大祭司'"
+    ],
+    "slang": [
+      "宗教鸭：使用宗教的鸭子",
+      "仪式大师：擅长仪式的玩家",
+      "神棍鸭：像神棍一样的角色",
+      "宗教影响者"
+    ],
+    "counterRoles": ["demon_hunter", "canadian_goose"],
+    "synergyRoles": ["sin_eater", "corruptor"],
+    "addedInVersion": "2.0",
+    "isSeasonal": false,
+    "popularity": 20
+  }]

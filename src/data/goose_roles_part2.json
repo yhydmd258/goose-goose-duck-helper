@@ -1,0 +1,392 @@
+[
+  {
+    "id": "adventurer",
+    "name": "冒险家",
+    "nameEn": "Adventurer",
+    "faction": "goose",
+    "skillDescription": "在环境危害中不会死亡（如岩浆、毒气）",
+    "usageTips": "可以安全前往危险区域完成任务",
+    "difficulty": "easy",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "危险任务：主动承担环境危险的任务",
+      "证明身份：通过进入危险区域证明自己",
+      "快速完成：利用免疫优势快速完成任务",
+      "救援队友：在危险区域帮助其他玩家"
+    ],
+    "precautions": [
+      "免疫环境伤害但不免疫玩家攻击",
+      "小心被鸭子利用环境陷害",
+      "证明身份时注意周围安全",
+      "不要过度冒险"
+    ],
+    "dialogues": [
+      "开局说辞：'冒险家，不怕环境伤害'",
+      "证明时：'看我进岩浆/毒气证明身份'",
+      "被怀疑时：'我冒险家，可以进危险区域证明'",
+      "会议发言：'我完成了XX危险任务'"
+    ],
+    "slang": [
+      "铁头娃：不怕死的冒险家",
+      "环境之子：免疫环境伤害",
+      "敢死队：专门做危险任务的玩家",
+      "不死鸟"
+    ],
+    "counterRoles": ["assassin", "professional"],
+    "synergyRoles": ["engineer", "locksmith"],
+    "addedInVersion": "1.2",
+    "isSeasonal": false,
+    "popularity": 45
+  },
+  {
+    "id": "locksmith",
+    "name": "锁匠",
+    "nameEn": "Locksmith",
+    "faction": "goose",
+    "skillDescription": "可以打开所有上锁的门",
+    "usageTips": "帮助团队快速移动，应对紧急情况",
+    "difficulty": "easy",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "快速开门：为团队打开封锁的门",
+      "紧急救援：打开监狱门救出被误关玩家",
+      "路线规划：规划最优移动路线",
+      "配合团队：与需要快速移动的角色配合"
+    ],
+    "precautions": [
+      "开门可能让鸭子也快速移动",
+      "小心开门时被埋伏",
+      "不要频繁开门引起怀疑",
+      "注意门的开关状态"
+    ],
+    "dialogues": [
+      "开局说辞：'锁匠，可以开所有门'",
+      "开门时：'我开了XX门，大家可以通过'",
+      "被怀疑时：'我锁匠，刚才在开XX门'",
+      "会议发言：'我开了XX区域的门'"
+    ],
+    "slang": [
+      "万能钥匙：能开所有门的锁匠",
+      "开门侠：专门开门的玩家",
+      "通道管理者：控制门开关的角色",
+      "自由通行证"
+    ],
+    "counterRoles": ["sorcerer"],
+    "synergyRoles": ["engineer", "adventurer"],
+    "addedInVersion": "1.2",
+    "isSeasonal": false,
+    "popularity": 40
+  },
+  {
+    "id": "politician",
+    "name": "政治家",
+    "nameEn": "Politician",
+    "faction": "goose",
+    "skillDescription": "平票时不会被投票淘汰",
+    "usageTips": "在争议投票中可以安全存活",
+    "difficulty": "medium",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "争议投票：在平票争议中存活",
+      "身份证明：通过平票不死证明身份",
+      "投票操控：利用能力影响投票结果",
+      "关键存活：在关键时刻保证存活"
+    ],
+    "precautions": [
+      "平票不死但可能被击杀",
+      "能力可能被鸭子利用",
+      "证明身份需要特定条件",
+      "不要过度依赖能力"
+    ],
+    "dialogues": [
+      "开局说辞：'政治家，平票不会死'",
+      "平票时：'平票了，我政治家不会死'",
+      "被怀疑时：'我政治家，可以平票证明'",
+      "会议发言：'这轮可能平票，我政治家'"
+    ],
+    "slang": [
+      "平票王：平票不死的政治家",
+      "投票幸存者：总能在投票中存活",
+      "争议解决者：处理平票情况的角色",
+      "免死金牌"
+    ],
+    "counterRoles": ["assassin", "professional"],
+    "synergyRoles": ["celebrity", "medium"],
+    "addedInVersion": "1.3",
+    "isSeasonal": false,
+    "popularity": 35
+  },
+  {
+    "id": "matchmaker",
+    "name": "媒人",
+    "nameEn": "Matchmaker",
+    "faction": "goose",
+    "skillDescription": "可以链接两名玩家，如果一人死亡另一人也死亡",
+    "usageTips": "链接可疑玩家和可靠玩家，制造威慑",
+    "difficulty": "hard",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "威慑链接：链接鸭子和重要鹅",
+      "保护链接：链接两个重要鹅互相保护",
+      "信息获取：通过链接测试玩家身份",
+      "谨慎使用：链接可能造成误伤"
+    ],
+    "precautions": [
+      "链接可能误杀好人",
+      "鸭子可能利用链接杀人",
+      "链接后无法取消",
+      "需要准确判断玩家身份"
+    ],
+    "dialogues": [
+      "开局说辞：'媒人，可以链接两个人'",
+      "链接后：'我链接了A和B，他们同生共死'",
+      "被怀疑时：'我媒人，刚才链接了XX'",
+      "会议发言：'通过链接我测试了A的身份'"
+    ],
+    "slang": [
+      "红线月老：链接玩家的媒人",
+      "生死与共：被链接的玩家",
+      "人肉炸弹：链接鸭子和好人的策略",
+      "命运共同体"
+    ],
+    "counterRoles": ["assassin", "identity_thief"],
+    "synergyRoles": ["detective", "medium"],
+    "addedInVersion": "1.3",
+    "isSeasonal": false,
+    "popularity": 30
+  },
+  {
+    "id": "celebrity",
+    "name": "网红",
+    "nameEn": "Celebrity",
+    "faction": "goose",
+    "skillDescription": "死亡时所有玩家都会收到警报",
+    "usageTips": "死亡立即暴露，帮助团队快速反应",
+    "difficulty": "easy",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "信息传递：死亡为团队提供警报",
+      "诱饵战术：引诱鸭子攻击暴露位置",
+      "身份公开：让部分人知道身份",
+      "快速反应：团队根据警报快速行动"
+    ],
+    "precautions": [
+      "死亡警报可能被鸭子利用",
+      "小心专业杀手杀你不报警",
+      "不要过早暴露给所有人",
+      "注意猎鹰和鹈鹕"
+    ],
+    "dialogues": [
+      "开局说辞：'网红，死了全图报警'",
+      "策略说明：'杀我试试？全图报警'",
+      "被怀疑时：'我网红，死了会报警证明'",
+      "会议发言：'我网红，刚才和A在一起'"
+    ],
+    "slang": [
+      "人肉警报：死亡报警的网红",
+      "全图广播：死亡时全图通知",
+      "移动警报器2.0：升级版加拿大鹅",
+      "死亡信号弹"
+    ],
+    "counterRoles": ["professional", "falcon", "pelican"],
+    "synergyRoles": ["canadian_goose", "medium"],
+    "addedInVersion": "1.3",
+    "isSeasonal": false,
+    "popularity": 40
+  },
+  {
+    "id": "tracker",
+    "name": "跟踪者",
+    "nameEn": "Tracker",
+    "faction": "goose",
+    "skillDescription": "可以看到玩家最后的位置",
+    "usageTips": "追踪可疑玩家的行动轨迹",
+    "difficulty": "medium",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "可疑追踪：追踪行为可疑的玩家",
+      "轨迹分析：分析玩家移动轨迹",
+      "信息提供：在会议中提供轨迹信息",
+      "隐蔽追踪：避免被目标发现"
+    ],
+    "precautions": [
+      "追踪可能暴露自己",
+      "信息可能有延迟",
+      "小心被鸭子反追踪",
+      "不要过度依赖轨迹信息"
+    ],
+    "dialogues": [
+      "开局说辞：'跟踪者，可以看最后位置'",
+      "追踪后：'我追踪了A，他最后在XX位置'",
+      "被怀疑时：'我跟踪者，刚才在追踪XX'",
+      "会议发言：'根据追踪，A的轨迹可疑'"
+    ],
+    "slang": [
+      "人肉GPS：追踪玩家的跟踪者",
+      "轨迹侦探：通过轨迹破案",
+      "尾行专家：擅长跟踪的玩家",
+      "移动记录仪"
+    ],
+    "counterRoles": ["invisible", "morphling"],
+    "synergyRoles": ["detective", "birdwatcher"],
+    "addedInVersion": "1.4",
+    "isSeasonal": false,
+    "popularity": 35
+  },
+  {
+    "id": "astral",
+    "name": "星界行者",
+    "nameEn": "Astral",
+    "faction": "goose",
+    "skillDescription": "可以灵魂出窍，以幽灵形态移动侦察",
+    "usageTips": "安全侦察，获取信息而不暴露",
+    "difficulty": "hard",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "安全侦察：灵魂出窍侦察危险区域",
+      "信息获取：获取关键区域信息",
+      "身体保护：出窍时确保身体安全",
+      "快速切换：根据需要快速切换形态"
+    ],
+    "precautions": [
+      "出窍时身体无法移动",
+      "身体可能被攻击",
+      "灵魂形态有时间限制",
+      "小心被鸭子发现"
+    ],
+    "dialogues": [
+      "开局说辞：'星界行者，可以灵魂出窍'",
+      "侦察后：'我灵魂看到XX区域情况'",
+      "被怀疑时：'我星界，刚才灵魂侦察去了'",
+      "会议发言：'通过灵魂侦察我发现了...'"
+    ],
+    "slang": [
+      "灵魂出窍：星界行者的技能",
+      "幽灵侦探：灵魂侦察的玩家",
+      "双重视角：同时看到两个地方",
+      "灵体侦察兵"
+    ],
+    "counterRoles": ["assassin", "professional"],
+    "synergyRoles": ["birdwatcher", "medium"],
+    "addedInVersion": "1.4",
+    "isSeasonal": false,
+    "popularity": 30
+  },
+  {
+    "id": "gravy",
+    "name": "肉汁",
+    "nameEn": "Gravy",
+    "faction": "goose",
+    "skillDescription": "完成任务增加赏金，杀手只能在单独相处时杀你",
+    "usageTips": "快速完成任务增加价值，但要注意安全",
+    "difficulty": "medium",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "快速任务：尽快完成任务增加赏金",
+      "抱团行动：避免单独行动",
+      "价值利用：高赏金时吸引保护",
+      "谨慎暴露：不要过早暴露身份"
+    ],
+    "precautions": [
+      "单独时非常危险",
+      "高赏金可能成为目标",
+      "小心被鸭子引诱单独",
+      "不要过度追求赏金"
+    ],
+    "dialogues": [
+      "开局说辞：'肉汁，做任务加钱'",
+      "任务后：'我做了X个任务，现在赏金XX'",
+      "被怀疑时：'我肉汁，刚才在做任务'",
+      "会议发言：'我肉汁，需要保护'"
+    ],
+    "slang": [
+      "赚钱鹅：做任务赚钱的肉汁",
+      "移动ATM：高赏金的肉汁",
+      "金库：需要保护的肉汁",
+      "赏金猎人目标"
+    ],
+    "counterRoles": ["assassin", "hitman"],
+    "synergyRoles": ["bodyguard", "sheriff"],
+    "addedInVersion": "1.5",
+    "isSeasonal": false,
+    "popularity": 45
+  },
+  {
+    "id": "lover_goose",
+    "name": "恋人鹅",
+    "nameEn": "Lover Goose",
+    "faction": "goose",
+    "skillDescription": "与另一玩家绑定，必须一起存活到最后",
+    "usageTips": "保护你的恋人，无论他是什么阵营",
+    "difficulty": "very_hard",
+    "winCondition": "和恋人一起存活到最后",
+    "commonStrategies": [
+      "保护恋人：无论如何保护恋人",
+      "身份确认：尽快确认恋人身份",
+      "共同行动：尽量和恋人一起行动",
+      "胜利条件：调整策略适应胜利条件"
+    ],
+    "precautions": [
+      "恋人可能是鸭子",
+      "一人死两人死",
+      "可能和团队目标冲突",
+      "需要高超的协调能力"
+    ],
+    "dialogues": [
+      "开局说辞：'恋人，需要找另一半'",
+      "找到后：'我恋人是A，要保护他'",
+      "被怀疑时：'我恋人，恋人是A'",
+      "会议发言：'我恋人，必须保护A'"
+    ],
+    "slang": [
+      "连体婴：绑定的恋人",
+      "生死与共：恋人关系",
+      "爱情保镖：保护恋人的玩家",
+      "命运共同体2.0"
+    ],
+    "counterRoles": ["assassin", "professional"],
+    "synergyRoles": ["bodyguard", "matchmaker"],
+    "addedInVersion": "1.5",
+    "isSeasonal": false,
+    "popularity": 40
+  },
+  {
+    "id": "demon_hunter",
+    "name": "恶魔猎手",
+    "nameEn": "Demon Hunter",
+    "faction": "goose",
+    "skillDescription": "特殊对抗恶魔的角色，有额外对抗能力",
+    "usageTips": "专门对抗恶魔类角色，在特定地图有效",
+    "difficulty": "hard",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "恶魔识别：识别并针对恶魔角色",
+      "地图利用：在有效地图发挥最大作用",
+      "团队配合：与团队共享恶魔信息",
+      "特殊对抗：使用特殊能力对抗恶魔"
+    ],
+    "precautions": [
+      "只在特定地图有效",
+      "对抗能力有限",
+      "可能被普通鸭子针对",
+      "需要准确识别恶魔"
+    ],
+    "dialogues": [
+      "开局说辞：'恶魔猎手，专杀恶魔'",
+      "发现恶魔：'我发现了恶魔在XX位置'",
+      "被怀疑时：'我恶魔猎手，可以证明'",
+      "会议发言：'根据我的能力，A可能是恶魔'"
+    ],
+    "slang": [
+      "恶魔克星：专门对抗恶魔",
+      "驱魔师：清除恶魔的角色",
+      "地狱使者：对抗地狱生物",
+      "特殊执法者"
+    ],
+    "counterRoles": ["demon", "assassin"],
+    "synergyRoles": ["sheriff", "vigilante"],
+    "addedInVersion": "2.0",
+    "isSeasonal": false,
+    "popularity": 25
+  }
+]

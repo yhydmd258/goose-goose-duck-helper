@@ -1,0 +1,320 @@
+{
+  "goose": {
+    "name": "普通鹅",
+    "nameEn": "Goose",
+    "faction": "goose",
+    "difficulty": "easy"
+  },
+  "canadian_goose": {
+    "name": "加拿大鹅",
+    "nameEn": "Canadian Goose",
+    "faction": "goose",
+    "difficulty": "medium"
+  },
+  "sheriff": {
+    "name": "警长",
+    "nameEn": "Sheriff",
+    "faction": "goose",
+    "difficulty": "hard"
+  },
+  "vigilante": {
+    "name": "正义使者",
+    "nameEn": "Vigilante",
+    "faction": "goose",
+    "difficulty": "medium"
+  },
+  "detective": {
+    "name": "侦探",
+    "nameEn": "Detective",
+    "faction": "goose",
+    "difficulty": "medium"
+  },
+  "engineer": {
+    "name": "工程师",
+    "nameEn": "Engineer",
+    "faction": "goose",
+    "difficulty": "medium"
+  },
+  "medium": {
+    "name": "通灵者",
+    "nameEn": "Medium",
+    "faction": "goose",
+    "difficulty": "hard"
+  },
+  "birdwatcher": {
+    "name": "观鸟者",
+    "nameEn": "Birdwatcher",
+    "faction": "goose",
+    "difficulty": "hard"
+  },
+  "coroner": {
+    "name": "殡仪员",
+    "nameEn": "Coroner",
+    "faction": "goose",
+    "difficulty": "medium"
+  },
+  "mimic": {
+    "name": "模仿者",
+    "nameEn": "Mimic",
+    "faction": "goose",
+    "difficulty": "very_hard"
+  },
+  "adventurer": {
+    "name": "冒险家",
+    "nameEn": "Adventurer",
+    "faction": "goose",
+    "difficulty": "easy"
+  },
+  "locksmith": {
+    "name": "锁匠",
+    "nameEn": "Locksmith",
+    "faction": "goose",
+    "difficulty": "easy"
+  },
+  "politician": {
+    "name": "政治家",
+    "nameEn": "Politician",
+    "faction": "goose",
+    "difficulty": "medium"
+  },
+  "matchmaker": {
+    "name": "媒人",
+    "nameEn": "Matchmaker",
+    "faction": "goose",
+    "difficulty": "hard"
+  },
+  "celebrity": {
+    "name": "网红",
+    "nameEn": "Celebrity",
+    "faction": "goose",
+    "difficulty": "easy"
+  },
+  "tracker": {
+    "name": "跟踪者",
+    "nameEn": "Tracker",
+    "faction": "goose",
+    "difficulty": "medium"
+  },
+  "astral": {
+    "name": "星界行者",
+    "nameEn": "Astral",
+    "faction": "goose",
+    "difficulty": "hard"
+  },
+  "gravy": {
+    "name": "肉汁",
+    "nameEn": "Gravy",
+    "faction": "goose",
+    "difficulty": "medium"
+  },
+  "lover_goose": {
+    "name": "恋人鹅",
+    "nameEn": "Lover Goose",
+    "faction": "goose",
+    "difficulty": "very_hard"
+  },
+  "demon_hunter": {
+    "name": "恶魔猎手",
+    "nameEn": "Demon Hunter",
+    "faction": "goose",
+    "difficulty": "hard"
+  },
+  "duck": {
+    "name": "普通鸭",
+    "nameEn": "Duck",
+    "faction": "duck",
+    "difficulty": "medium"
+  },
+  "assassin": {
+    "name": "刺客",
+    "nameEn": "Assassin",
+    "faction": "duck",
+    "difficulty": "hard"
+  },
+  "professional": {
+    "name": "专业杀手",
+    "nameEn": "Professional",
+    "faction": "duck",
+    "difficulty": "medium"
+  },
+  "silencer": {
+    "name": "沉默杀手",
+    "nameEn": "Silencer",
+    "faction": "duck",
+    "difficulty": "medium"
+  },
+  "morphling": {
+    "name": "变形者",
+    "nameEn": "Morphling",
+    "faction": "duck",
+    "difficulty": "hard"
+  },
+  "cannibal": {
+    "name": "食人族",
+    "nameEn": "Cannibal",
+    "faction": "duck",
+    "difficulty": "medium"
+  },
+  "sorcerer": {
+    "name": "术士",
+    "nameEn": "Sorcerer",
+    "faction": "duck",
+    "difficulty": "medium"
+  },
+  "ninja": {
+    "name": "忍者",
+    "nameEn": "Ninja",
+    "faction": "duck",
+    "difficulty": "hard"
+  },
+  "vampire": {
+    "name": "吸血鬼",
+    "nameEn": "Vampire",
+    "faction": "duck",
+    "difficulty": "hard"
+  },
+  "informer": {
+    "name": "告密者",
+    "nameEn": "Informer",
+    "faction": "duck",
+    "difficulty": "very_hard"
+  },
+  "undertaker": {
+    "name": "承办人",
+    "nameEn": "Undertaker",
+    "faction": "duck",
+    "difficulty": "medium"
+  },
+  "hitman": {
+    "name": "杀手",
+    "nameEn": "Hitman",
+    "faction": "duck",
+    "difficulty": "medium"
+  },
+  "mystic": {
+    "name": "神秘主义者",
+    "nameEn": "Mystic",
+    "faction": "duck",
+    "difficulty": "medium"
+  },
+  "spy": {
+    "name": "间谍",
+    "nameEn": "Spy",
+    "faction": "duck",
+    "difficulty": "hard"
+  },
+  "mute_duck": {
+    "name": "静音鸭",
+    "nameEn": "Mute Duck",
+    "faction": "duck",
+    "difficulty": "medium"
+  },
+  "party_duck": {
+    "name": "派对鸭",
+    "nameEn": "Party Duck",
+    "faction": "duck",
+    "difficulty": "easy"
+  },
+  "demolitionist": {
+    "name": "爆炸王",
+    "nameEn": "Demolitionist",
+    "faction": "duck",
+    "difficulty": "hard"
+  },
+  "identity_thief": {
+    "name": "身份窃贼",
+    "nameEn": "Identity Thief",
+    "faction": "duck",
+    "difficulty": "very_hard"
+  },
+  "invisible": {
+    "name": "隐形鸭",
+    "nameEn": "Invisible",
+    "faction": "duck",
+    "difficulty": "medium"
+  },
+  "serial_killer": {
+    "name": "连环杀手",
+    "nameEn": "Serial Killer",
+    "faction": "duck",
+    "difficulty": "very_hard"
+  },
+  "sin_eater": {
+    "name": "食罪者",
+    "nameEn": "Sin Eater",
+    "faction": "duck",
+    "difficulty": "hard"
+  },
+  "high_priest": {
+    "name": "大祭司",
+    "nameEn": "High Priest",
+    "faction": "duck",
+    "difficulty": "very_hard"
+  },
+  "pigeon": {
+    "name": "鸽子",
+    "nameEn": "Pigeon",
+    "faction": "neutral",
+    "difficulty": "hard"
+  },
+  "vulture": {
+    "name": "秃鹫",
+    "nameEn": "Vulture",
+    "faction": "neutral",
+    "difficulty": "medium"
+  },
+  "falcon": {
+    "name": "猎鹰",
+    "nameEn": "Falcon",
+    "faction": "neutral",
+    "difficulty": "very_hard"
+  },
+  "raven": {
+    "name": "乌鸦",
+    "nameEn": "Raven",
+    "faction": "neutral",
+    "difficulty": "medium"
+  },
+  "dodo": {
+    "name": "渡渡鸟/呆呆鸟",
+    "nameEn": "Dodo/Dodo Bird",
+    "faction": "neutral",
+    "difficulty": "hard"
+  },
+  "dueling_dodos": {
+    "name": "决斗呆呆鸟",
+    "nameEn": "Dueling Dodos",
+    "faction": "neutral",
+    "difficulty": "very_hard"
+  },
+  "pelican": {
+    "name": "鹈鹕",
+    "nameEn": "Pelican",
+    "faction": "neutral",
+    "difficulty": "hard"
+  },
+  "parrot": {
+    "name": "鹦鹉",
+    "nameEn": "Parrot",
+    "faction": "neutral",
+    "difficulty": "medium"
+  },
+  "dinosaur": {
+    "name": "恐龙",
+    "nameEn": "Dinosaur",
+    "faction": "neutral",
+    "difficulty": "hard"
+  },
+  "wolf": {
+    "name": "狼",
+    "nameEn": "Wolf",
+    "faction": "neutral",
+    "difficulty": "hard"
+  },
+  "snowman": {
+    "name": "雪人",
+    "nameEn": "Snowman",
+    "faction": "neutral",
+    "difficulty": "medium"
+  }
+}

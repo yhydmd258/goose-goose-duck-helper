@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>鹅鸭杀完整角色数据库</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --goose-color: #1b5e20;
+      --duck-color: #b71c1c;
+      --neutral-color: #e65100;
+      --easy-color: #2e7d32;
+      --medium-color: #f57c00;
+      --hard-color: #d32f2f;
+      --very-hard-color: #6a1b9a;
+      --bg-dark: #0f172a;
+      --bg-card: #1e293b;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: 'Segoe UI', system-ui, sans-serif; 
+      background: var(--bg-dark); 
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    /* 头部 */
+    .header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #0c4a6e, #1e40af);
+      border-radius: 16px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    .header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #fbbf24, #f87171);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .header p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto 25px;
+    }
+    
+    /* 统计卡片 */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .stat-card {
+      background: var(--bg-card);
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .stat-card:hover {
+      transform: translateY(-5px);
+    }
+    .stat-card i {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    .stat-card.goose { border-top: 4px solid var(--goose-color); }
+    .stat-card.duck { border-top: 4px solid var(--duck-color); }
+    .stat-card.neutral { border-top: 4px solid var(--neutral-color); }
+    .stat-card.total { border-top: 4px solid #8b5cf6; }
+    .stat-number {
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .stat-label {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+    
+    /* 控制面板 */
+    .controls {
+      background: var(--bg-card);
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .search-box {
+      width: 100%;
+      padding: 15px 20px;
+      border: 2px solid #334155;
+      border-radius: 10px;
+      background: #0f172a;
+      color: var(--text-primary);
+      font-size: 1rem;
+      margin-bottom: 20px;
+      transition: border-color 0.3s;
+    }
+    .search-box:focus {
+      outline: none;
+      border-color: #3b82f6;
+    }
+    .filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    .filter-btn {
+      padding: 10px 20px;
+      border: 2px solid #334155;
+      background: transparent;
+      color: var(--text-secondary);
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-weight: 500;
+    }
+    .filter-btn.active {
+      background: #3b82f6;
+      border-color: #3b82f6;
+      color: white;
+    }
+    .filter-btn:hover:not(.active) {
+      border-color: #64748b;
+      color: var(--text-primary);
+    }
+    
+    /* 角色网格 */
+    .roles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 25px;
+      margin-bottom: 40px;
+    }
+    
+    /* 角色卡片 */
+    .role-card {
+      background: var(--bg-card);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: all 0.3s;
+      position: relative;
+    }
+    .role-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+      border-color: rgba(59, 130, 246, 0.5);
+    }
+    .role-header {
+      padding: 25px 25px 15px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .role-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .role-name {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    .role-name-en {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+    .badge-faction-goose { background: var(--goose-color); color: white; }
+    .badge-faction-duck { background: var(--duck-color); color: white; }
+    .badge-faction-neutral { background: var(--neutral-color); color: white; }
+    .badge-difficulty-easy { background: var(--easy-color); color: white; }
+    .badge-difficulty-medium { background: var(--medium-color); color: white; }
+    .badge-difficulty-hard { background: var(--hard-color); color: white; }
+    .badge-difficulty-very_hard { background: var(--very-hard-color); color: white; }
+    
+    .role-content {
+      padding: 20px 25px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section:last-child {
+      margin-bottom: 0;
+    }
+    .section-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #60a5fa;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-content {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+    }
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .tag {
+      background: rgba(59, 130, 246, 0.2);
+      color: #93c5fd;
+      padding: 5px 10px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+    }
+    
+    /* 空状态 */
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      grid-column: 1 / -1;
+    }
+    .empty-icon {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      opacity: 0.5;
+    }
+    .empty-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .empty-desc {
+      color: var(--text-secondary);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    
+    /* 页脚 */
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--text-secondary);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 40px;
+    }
+    
+    /* 响应式 */
+    @media (max-width: 768px) {
+      .roles-grid {
+        grid-template-columns: 1fr;
+      }
+      .header h1 {
+        font-size: 2rem;
+      }
+      .stat-card {
+        padding: 20px;
+      }
+      .filter-group {
+        justify-content: center;
+      }
+    }
+    
+    /* 动画 */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .role-card {
+      animation: fadeIn 0.5s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><i class="fas fa-gamepad"></i> 鹅鸭杀完整角色数据库</h1>
+      <p>收录全部53个角色详细信息，包含技能描述、常用策略、注意事项、说辞黑话等全方位数据</p>
+      <div class="stats-grid" id="statsContainer">
+        <!-- 统计数据将通过JavaScript动态生成 -->
+      </div>
+    </div>
+    
+    <div class="controls">
+      <input type="text" class="search-box" id="searchInput" placeholder="搜索角色名称、英文名、技能或俗语...">
+      
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="faction" data-value="all">全部阵营</button>
+        <button class="filter-btn" data-filter="faction" data-value="goose">
+          <i class="fas fa-dove"></i> 鹅阵营
+        </button>
+        <button class="filter-btn" data-filter="faction" data-value="duck">
+          <i class="fas fa-crow"></i> 鸭阵营
+        </button>
+        <button class="filter-btn" data-filter="faction" data-value="neutral">
+          <i class="fas fa-balance-scale"></i> 中立阵营
+        </button>
+      </div>
+      
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="difficulty" data-value="all">全部难度</button>
+        <button class="filter-btn" data-filter="difficulty" data-value="easy">
+          <i class="fas fa-star"></i> 简单
+        </button>
+        <button class="filter-btn" data-filter="difficulty" data-value="medium">
+          <i class="fas fa-star-half-alt"></i> 中等
+        </button>
+        <button class="filter-btn" data-filter="difficulty" data-value="hard">
+          <i class="fas fa-star"></i> 困难
+        </button>
+        <button class="filter-btn" data-filter="difficulty" data-value="very_hard">
+          <i class="fas fa-skull"></i> 极难
+        </button>
+      </div>
+    </div>
+    
+    <div class="roles-grid" id="rolesContainer">
+      <!-- 角色卡片将通过JavaScript动态生成 -->
+    </div>
+    
+    <div class="footer">
+      <p>数据来源: Goose Goose Duck 游戏数据 + 社区整理 | 最后更新: 2026年4月10日</p>
+      <p>本工具仅供学习参考，实际游戏内容以官方版本为准</p>
+    </div>
+  </div>
+  
+  <script type="module">
+    import { roleService } from './src/services/RoleService.js';
+    
+    class RoleDatabase {
+      constructor() {
+        this.roles = [];
+        this.filteredRoles = [];
+        this.filters = {
+          faction: 'all',
+          difficulty: 'all',
+          search: ''
+        };
+        this.init();
+      }
+      
+      async init() {
+        this.roles = roleService.getAllRoles();
+        this.renderStats();
+        this.renderRoles();
+        this.bindEvents();
+      }
+      
+      renderStats() {
+        const gooseCount = this.roles.filter(r => r.faction === 'goose').length;
+        const duckCount = this.roles.filter(r => r.faction === 'duck').length;
+        const neutralCount = this.roles.filter(r => r.faction === 'neutral').length;
+        const total = this.roles.length;
+        
+        const statsContainer = document.getElementById('statsContainer');
+        statsContainer.innerHTML = `
+          <div class="stat-card goose">
+            <i class="fas fa-dove" style="color: var(--goose-color)"></i>
+            <div class="stat-number">${gooseCount}</div>
+            <div class="stat-label">鹅阵营角色</div>
+          </div>
+          <div class="stat-card duck">
+            <i class="fas fa-crow" style="color: var(--duck-color)"></i>
+            <div class="stat-number">${duckCount}</div>
+            <div class="stat-label">鸭阵营角色</div>
+          </div>
+          <div class="stat-card neutral">
+            <i class="fas fa-balance-scale" style="color: var(--neutral-color)"></i>
+            <div class="stat-number">${neutralCount}</div>
+            <div class="stat-label">中立阵营角色</div>
+          </div>
+          <div class="stat-card total">
+            <i class="fas fa-database" style="color: #8b5cf6"></i>
+            <div class="stat-number">${total}</div>
+            <div class="stat-label">总计角色数量</div>
+          </div>
+        `;
+      }
+      
+      applyFilters() {
+        this.filteredRoles = this.roles.filter(role => {
+          // 阵营筛选
+          if (this.filters.faction !== 'all' && role.faction !== this.filters.faction) {
+            return false;
+          }
+          
+          // 难度筛选
+          if (this.filters.difficulty !== 'all' && role.difficulty !== this.filters.difficulty) {
+            return false;
+          }
+          
+          // 搜索筛选
+          if (this.filters.search) {
+            const searchLower = this.filters.search.toLowerCase();
+            const searchFields = [
+              role.name,
+              role.nameEn,
+              role.skillDescription,
+              role.usageTips,
+              ...(role.commonStrategies || []),
+              ...(role.slang || [])
+            ];
+            
+            const matches = searchFields.some(field => 
+              field && field.toLowerCase().includes(searchLower)
+            );
+            
+            if (!matches) return false;
+          }
+          
+          return true;
+        });
+      }
+      
+      renderRoles() {
+        this.applyFilters();
+        const container = document.getElementById('rolesContainer');
+        
+        if (this.filteredRoles.length === 0) {
+          container.innerHTML = `
+            <div class="empty-state">
+              <div class="empty-icon">🔍</div>
+              <h3 class="empty-title">未找到匹配的角色</h3>
+              <p class="empty-desc">尝试使用其他关键词或调整筛选条件</p>
+            </div>
+          `;
+          return;
+        }
+        
+        container.innerHTML = this.filteredRoles.map(role => this.renderRoleCard(role)).join('');
+      }
+      
+      renderRoleCard(role) {
+        const factionName = role.faction === 'goose' ? '鹅阵营' :
+                          role.faction === 'duck' ? '鸭阵营' : '中立阵营';
+        const difficultyName = role.difficulty === 'easy' ? '简单' :
+                             role.difficulty === 'medium' ? '中等' :
+                             role.difficulty === 'hard' ? '困难' : '极难';
+        
+        return `
+          <div class="role-card">
+            <div class="role-header">
+              <div class="role-title">
+                <div class="role-name">${role.name}</div>
+                <div>
+                  <span class="badge badge-faction-${role.faction}">${factionName}</span>
+                  <span class="badge badge-difficulty-${role.difficulty}">${difficultyName}</span>
+                </div>
+              </div>
+              <div class="role-name-en">${role.nameEn}</div>
+            </div>
+            
+            <div class="role-content">
+              <div class="section">
+                <div class="section-title"><i class="fas fa-magic"></i> 技能描述</div>
+                <div class="section-content">${role.skillDescription}</div>
+              </div>
+              
+              <div class="section">
+                <div class="section-title"><i class="fas fa-lightbulb"></i> 使用建议</div>
+                <div class="section-content">${role.usageTips}</div>
+              </div>
+              
+              ${role.commonStrategies && role.commonStrategies.length > 0 ? `
+              <div class="section">
+                <div class="section-title"><i class="fas fa-chess-board"></i> 常用策略</div>
+                <div class="section-content">
+                  <ul style="padding-left: 20px; margin-top: 5px;">
+                    ${role.commonStrategies.map(s => `<li>${s}</li>`).join('')}
+                  </ul>
+                </div>
+              </div>
+              ` : ''}
+              
+              ${role.precautions && role.precautions.length > 0 ? `
+              <div class="section">
+                <div class="section-title"><i class="fas fa-exclamation-triangle"></i> 注意事项</div>
+                <div class="section-content">
+                  <ul style="padding-left: 20px; margin-top: 5px;">
+                    ${role.precautions.map(p => `<li>${p}</li>`).join('')}
+                  </ul>
+                </div>
+              </div>
+              ` : ''}
+              
+              ${role.dialogues && role.dialogues.length > 0 ? `
+              <div class="section">
+                <div class="section-title"><i class="fas fa-comments"></i> 常用说辞</div>
+                <div class="section-content">
+                  <div class="tag-list">
+                    ${role.dialogues.map(d => `<span class="tag">"${d}"</span>`).join('')}
+                  </div>
+                </div>
+              </div>
+              ` : ''}
+              
+              ${role.slang && role.slang.length > 0 ? `
+              <div class="section">
+                <div class="section-title"><i class="fas fa-language"></i> 俗语黑话</div>
+                <div class="section-content">
+                  <div class="tag-list">
+                    ${role.slang.map(s => `<span class="tag">${s}</span>`).join('')}
+                  </div>
+                </div>
+              </div>
+              ` : ''}
+              
+              <div class="section">
+                <div class="section-title"><i class="fas fa-info-circle"></i> 角色信息</div>
+                <div class="section-content" style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+                  <span>版本: ${role.addedInVersion || '1.0'}</span>
+                  <span>热度: ${role.popularity || 50}/100</span>
+                  ${role.isSeasonal ? '<span><i class="fas fa-snowflake"></i> 季节性</span>' : ''}
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+      
+      bindEvents() {
+        // 搜索框
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+          this.filters.search = e.target.value;
+          this.renderRoles();
+        });
+        
+        // 筛选按钮
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const filterType = btn.dataset.filter;
+            const filterValue = btn.dataset.value;
+            
+            // 更新按钮状态
+            document.querySelectorAll(`[data-filter="${filterType}"]`).forEach(b => {
+              b.classList.remove('active');
+            });
+            btn.classList.add('active');
+            
+            // 更新筛选器
+            this.filters[filterType] = filterValue;
+            this.renderRoles();
+          });
+        });
+      }
+    }
+    
+    // 初始化应用
+    document.addEventListener('DOMContentLoaded', () => {
+      new RoleDatabase();
+    });
+  </script>
+</body>
+</html>

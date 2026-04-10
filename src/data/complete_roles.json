@@ -1,0 +1,391 @@
+[
+  {
+    "id": "goose",
+    "name": "普通鹅",
+    "nameEn": "Goose",
+    "faction": "goose",
+    "skillDescription": "无特殊技能，只能完成任务和参与投票",
+    "usageTips": "专注于完成任务，观察其他玩家行为，积极参与会议讨论",
+    "difficulty": "easy",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "抱团行动：尽量和其他鹅一起行动，减少被单独击杀的风险",
+      "任务优先：快速完成任务可以加速胜利",
+      "观察行为：注意可疑的绕路、跟随或避开人群的行为",
+      "会议发言：清晰表达自己的观察和推理"
+    ],
+    "precautions": [
+      "不要单独行动，容易被鸭子击杀",
+      "不要盲目相信所有人，鸭子会伪装",
+      "会议中不要情绪化发言，保持理性",
+      "注意紧急按钮的使用时机"
+    ],
+    "dialogues": [
+      "开局说辞：'我是普通鹅，这局专心做任务'",
+      "被怀疑时：'我一直和XX在一起做任务，可以作证'",
+      "发现尸体：'我在XX位置发现尸体，刚才看到YY经过那里'",
+      "投票理由：'ZZ的行为很可疑，他刚才绕路避开人群'"
+    ],
+    "slang": [
+      "白板：指普通鹅，没有任何特殊能力",
+      "打工鹅：专心做任务的鹅",
+      "抱大腿：跟随有能力的玩家寻求保护",
+      "开会王：经常发起会议的玩家"
+    ],
+    "counterRoles": ["assassin", "professional", "silencer"],
+    "synergyRoles": ["detective", "sheriff", "medium"],
+    "addedInVersion": "1.0",
+    "isSeasonal": false,
+    "popularity": 100
+  },
+  {
+    "id": "canadian_goose",
+    "name": "加拿大鹅",
+    "nameEn": "Canadian Goose",
+    "faction": "goose",
+    "skillDescription": "被鸭子杀死后，凶手会自动在1秒后报告尸体",
+    "usageTips": "可以作为诱饵暴露凶手身份，但要注意保护自己",
+    "difficulty": "medium",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "身份公开：开局告诉1-2个可信玩家你的身份",
+      "诱饵战术：故意单独行动引诱鸭子攻击",
+      "信息传递：死亡后通过自动报告为团队提供关键信息",
+      "谨慎暴露：不要过早暴露给太多人"
+    ],
+    "precautions": [
+      "不要告诉所有人你的身份，避免被刺客针对",
+      "注意专业杀手，他杀你不会自动报告",
+      "小心猎鹰和鹈鹕，他们杀你也不会报告",
+      "避免被正义使者误杀"
+    ],
+    "dialogues": [
+      "开局说辞：'我是加拿大，信我的可以跟我走'",
+      "策略说明：'我是加拿大，死了会自动报警，鸭子不敢动我'",
+      "被怀疑时：'杀我试试？死了自动报警'",
+      "会议发言：'我是加拿大，刚才和A、B在一起'"
+    ],
+    "slang": [
+      "报警鹅：死亡自动报警的加拿大鹅",
+      "钓鱼执法：用加拿大鹅引诱鸭子出手",
+      "自爆卡车：故意送死暴露凶手的加拿大鹅",
+      "移动警报器"
+    ],
+    "counterRoles": ["professional", "falcon", "pelican"],
+    "synergyRoles": ["detective", "medium", "celebrity"],
+    "addedInVersion": "1.0",
+    "isSeasonal": false,
+    "popularity": 85
+  },
+  {
+    "id": "sheriff",
+    "name": "警长",
+    "nameEn": "Sheriff",
+    "faction": "goose",
+    "skillDescription": "可以击杀任何玩家，但如果杀到鹅会自己死亡",
+    "usageTips": "谨慎使用击杀能力，最好有确凿证据再动手",
+    "difficulty": "hard",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "证据优先：确保有足够证据再开枪",
+      "抱团行动：和可信的鹅一起行动",
+      "配合侦探：让侦探先调查，你再动手",
+      "保留技能：关键时刻使用，不要轻易暴露"
+    ],
+    "precautions": [
+      "绝对不要杀没有确凿证据的玩家",
+      "小心变形者和身份窃贼的伪装",
+      "注意刺客可能在会议猜你身份",
+      "避免被鸭子反杀"
+    ],
+    "dialogues": [
+      "开局说辞：'警长在场，鸭子小心点'",
+      "击杀前：'我有证据，你是鸭子，准备受死'",
+      "被怀疑时：'我是警长，可以试刀，但别乱试'",
+      "会议发言：'我警长，刚才看到可疑行为'"
+    ],
+    "slang": [
+      "带刀好人：有击杀能力的好人",
+      "试刀：让警长击杀可疑玩家测试身份",
+      "自杀警：误杀鹅自己死亡的警长",
+      "正义の铁拳"
+    ],
+    "counterRoles": ["assassin", "morphling", "identity_thief"],
+    "synergyRoles": ["detective", "vigilante", "medium"],
+    "addedInVersion": "1.0",
+    "isSeasonal": false,
+    "popularity": 90
+  },
+  {
+    "id": "vigilante",
+    "name": "正义使者",
+    "nameEn": "Vigilante",
+    "faction": "goose",
+    "skillDescription": "可以击杀一名玩家而不受惩罚（每局限一次）",
+    "usageTips": "用于清除高度可疑的鸭子，关键时刻使用",
+    "difficulty": "medium",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "一击必杀：确保目标确实是鸭子",
+      "后期使用：留到游戏后期关键回合",
+      "配合信息：结合侦探、通灵者的信息",
+      "隐藏身份：不要过早暴露"
+    ],
+    "precautions": [
+      "只有一次机会，不要浪费",
+      "小心猎鹰伪装正义使者",
+      "注意刺客可能在会议猜你身份",
+      "避免被鸭子反杀"
+    ],
+    "dialogues": [
+      "开局说辞：'正义在场，鸭子收敛点'",
+      "使用技能：'我有把握，他是鸭子，我动手了'",
+      "被怀疑时：'我正义，可以试刀但只有一次'",
+      "会议发言：'我正义，这轮看情况出手'"
+    ],
+    "slang": [
+      "一次性好人：只有一次击杀机会",
+      "正义の铁拳：正义使者的击杀",
+      "憋大招：保留技能到关键时刻",
+      "赌命一击"
+    ],
+    "counterRoles": ["assassin", "falcon"],
+    "synergyRoles": ["detective", "sheriff", "coroner"],
+    "addedInVersion": "1.0",
+    "isSeasonal": false,
+    "popularity": 80
+  },
+  {
+    "id": "detective",
+    "name": "侦探",
+    "nameEn": "Detective",
+    "faction": "goose",
+    "skillDescription": "可以调查玩家，如果该玩家最近杀过人会显示红脚印",
+    "usageTips": "优先调查行为可疑的玩家，将调查结果在会议中分享",
+    "difficulty": "medium",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "可疑优先：调查行为最可疑的玩家",
+      "信息共享：及时在会议中分享调查结果",
+      "保护警长：为警长提供准确目标",
+      "隐藏身份：避免被刺客针对"
+    ],
+    "precautions": [
+      "调查结果不是100%准确（有冷却时间）",
+      "小心被鸭子反杀",
+      "注意刺客可能在会议猜你身份",
+      "不要过早暴露"
+    ],
+    "dialogues": [
+      "开局说辞：'侦探在场，行为可疑的注意'",
+      "调查后：'我调查了A，他有/没有红脚印'",
+      "被怀疑时：'我侦探，可以调查证明'",
+      "会议发言：'根据调查，A/B可疑'"
+    ],
+    "slang": [
+      "人肉扫描仪：调查玩家的侦探",
+      "红脚印：杀过人的标志",
+      "清白之证：调查显示没有红脚印",
+      "信息核心"
+    ],
+    "counterRoles": ["assassin", "silencer"],
+    "synergyRoles": ["sheriff", "vigilante", "medium"],
+    "addedInVersion": "1.0",
+    "isSeasonal": false,
+    "popularity": 75
+  },
+  {
+    "id": "engineer",
+    "name": "工程师",
+    "nameEn": "Engineer",
+    "faction": "goose",
+    "skillDescription": "可以使用通风管道在地图中快速移动",
+    "usageTips": "利用通风管道快速完成任务或逃离危险区域",
+    "difficulty": "medium",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "快速移动：利用管道快速到达任务点",
+      "危险回避：遇到危险立即进管道",
+      "侦察任务：快速侦察多个区域",
+      "隐藏使用：避免被看到使用管道"
+    ],
+    "precautions": [
+      "使用管道时可能被其他玩家看到",
+      "小心管道里有鸭子埋伏",
+      "注意术士可能关闭所有管道",
+      "不要频繁使用引起怀疑"
+    ],
+    "dialogues": [
+      "开局说辞：'工程师，可以快速做任务'",
+      "使用后：'我刚从XX管道过来，没看到人'",
+      "被怀疑时：'我工程师，用管道快速移动很正常'",
+      "会议发言：'我通过管道看到XX区域情况'"
+    ],
+    "slang": [
+      "管道工：使用管道的工程师",
+      "瞬移鹅：快速移动的工程师",
+      "地鼠：频繁进出管道的玩家",
+      "快速反应部队"
+    ],
+    "counterRoles": ["sorcerer", "voyeur"],
+    "synergyRoles": ["adventurer", "locksmith"],
+    "addedInVersion": "1.0",
+    "isSeasonal": false,
+    "popularity": 70
+  },
+  {
+    "id": "medium",
+    "name": "通灵者",
+    "nameEn": "Medium",
+    "faction": "goose",
+    "skillDescription": "可以看到鬼魂（死亡玩家）的位置",
+    "usageTips": "了解死亡情况，追踪鬼魂位置推断死亡地点",
+    "difficulty": "hard",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "鬼魂追踪：通过鬼魂位置推断死亡地点",
+      "信息整合：结合鬼魂位置和时间分析",
+      "隐藏身份：避免被刺客针对",
+      "配合侦探：提供死亡时间信息"
+    ],
+    "precautions": [
+      "鬼魂可能移动，位置不绝对准确",
+      "小心被鸭子反杀",
+      "注意刺客可能在会议猜你身份",
+      "信息需要结合其他证据"
+    ],
+    "dialogues": [
+      "开局说辞：'通灵在场，死了的可以给我信息'",
+      "看到鬼魂：'我看到鬼魂在XX位置，死亡时间约X秒前'",
+      "被怀疑时：'我通灵，可以看到鬼魂证明'",
+      "会议发言：'根据鬼魂位置，死亡发生在XX区域'"
+    ],
+    "slang": [
+      "阴阳眼：能看到鬼魂的通灵者",
+      "死人通讯员：与死者沟通的角色",
+      "灵媒侦探：结合灵异信息的侦探",
+      "死亡记录仪"
+    ],
+    "counterRoles": ["assassin", "professional"],
+    "synergyRoles": ["detective", "sheriff", "coroner"],
+    "addedInVersion": "1.0",
+    "isSeasonal": false,
+    "popularity": 65
+  },
+  {
+    "id": "birdwatcher",
+    "name": "观鸟者",
+    "nameEn": "Birdwatcher",
+    "faction": "goose",
+    "skillDescription": "可以透过墙壁看到有限范围",
+    "usageTips": "监视关键区域（如尸体发现处、破坏点）",
+    "difficulty": "hard",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "关键监视：监视尸体发现点或任务点",
+      "隐蔽观察：躲在安全位置观察",
+      "信息提供：及时报告观察到的可疑行为",
+      "配合团队：与其他人共享监视信息"
+    ],
+    "precautions": [
+      "视野有限，需要选择好位置",
+      "观察时自身可能暴露",
+      "小心被鸭子反杀",
+      "不要长时间停留同一位置"
+    ],
+    "dialogues": [
+      "开局说辞：'观鸟者，可以看穿墙壁'",
+      "观察到：'我从墙壁看到A在XX位置行为可疑'",
+      "被怀疑时：'我观鸟者，刚才在监视XX区域'",
+      "会议发言：'我观察到A绕开了人群'"
+    ],
+    "slang": [
+      "透视眼：能看穿墙壁的观鸟者",
+      "监控摄像头：持续监视的玩家",
+      "墙后之眼：隐蔽观察的观鸟者",
+      "活体雷达"
+    ],
+    "counterRoles": ["invisible", "morphling"],
+    "synergyRoles": ["detective", "astral"],
+    "addedInVersion": "1.1",
+    "isSeasonal": false,
+    "popularity": 60
+  },
+  {
+    "id": "coroner",
+    "name": "殡仪员",
+    "nameEn": "Coroner",
+    "faction": "goose",
+    "skillDescription": "检查尸体时能看到死者的角色",
+    "usageTips": "报告真实死亡信息，但要注意自身安全",
+    "difficulty": "medium",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "尸体检查：第一时间检查尸体获取信息",
+      "信息保密：先不公开，结合其他信息分析",
+      "配合警长：为警长提供准确目标",
+      "安全第一：检查时注意周围环境"
+    ],
+    "precautions": [
+      "检查尸体时可能被鸭子袭击",
+      "信息可能被鸭子利用",
+      "小心刺客可能在会议猜你身份",
+      "不要单独检查尸体"
+    ],
+    "dialogues": [
+      "开局说辞：'殡仪员，可以验尸'",
+      "检查后：'我检查了尸体，死者是XX角色'",
+      "被怀疑时：'我殡仪员，可以验尸证明'",
+      "会议发言：'根据验尸，死者身份是...'"
+    ],
+    "slang": [
+      "验尸官：检查尸体的殡仪员",
+      "死亡鉴定师：确定死者身份",
+      "法医鹅：专业验尸的角色",
+      "身份揭示者"
+    ],
+    "counterRoles": ["assassin", "cannibal"],
+    "synergyRoles": ["sheriff", "detective", "medium"],
+    "addedInVersion": "1.1",
+    "isSeasonal": false,
+    "popularity": 55
+  },
+  {
+    "id": "mimic",
+    "name": "模仿者",
+    "nameEn": "Mimic",
+    "faction": "goose",
+    "skillDescription": "在鸭子看来你是鸭子（但实际是鹅）",
+    "usageTips": "可以混入鸭子阵营获取信息，但要小心被鹅误杀",
+    "difficulty": "very_hard",
+    "winCondition": "完成任务或投票淘汰所有鸭子",
+    "commonStrategies": [
+      "双重身份：在鸭子和鹅之间周旋",
+      "信息获取：从鸭子那里获取情报",
+      "适时暴露：关键时刻暴露真实身份",
+      "谨慎行动：避免被双方怀疑"
+    ],
+    "precautions": [
+      "可能被鹅误杀",
+      "鸭子可能试探你",
+      "身份暴露后很危险",
+      "需要高超的演技"
+    ],
+    "dialogues": [
+      "对鹅说：'我是鹅，别杀我'",
+      "对鸭说：'自己人，别动手'",
+      "被怀疑时：'我模仿者，鸭子看来我是鸭'",
+      "会议发言：'我获取了鸭子的信息...'"
+    ],
+    "slang": [
+      "双面间谍：在双方之间周旋",
+      "变色龙：随时改变立场的玩家",
+      "卧底鹅：潜入鸭子阵营的鹅",
+      "演技派"
+    ],
+    "counterRoles": ["sheriff", "vigilante", "assassin"],
+    "synergyRoles": ["detective", "medium"],
+    "addedInVersion": "1.2",
+    "isSeasonal": false,
+    "popularity": 50
+  }]
